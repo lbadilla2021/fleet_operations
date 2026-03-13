@@ -18,47 +18,47 @@ msgstr ""
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle_log_services__main_type__non-vehicle
 msgid " Non-Vehicle"
-msgstr ""
+msgstr " No vehicular"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_stock_picking__work_order_reopen_id
 msgid " Work Order"
-msgstr ""
+msgstr " Orden de trabajo"
 
 #. module: fleet_operations
 #: model:ir.actions.report,print_report_name:fleet_operations.action_report_repair_line_summary
 msgid "'Repair Line Summary'"
-msgstr ""
+msgstr "'Resumen de líneas de reparación'"
 
 #. module: fleet_operations
 #: model:ir.actions.report,print_report_name:fleet_operations.action_report_vehicle_change_history
 msgid "'Vehicle Change History'"
-msgstr ""
+msgstr "'Historial de cambios del vehículo'"
 
 #. module: fleet_operations
 #: model:ir.actions.report,print_report_name:fleet_operations.write_off_report_qweb
 msgid "'Write-Off'"
-msgstr ""
+msgstr "'Baja total'"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "<b>Battery History</b>"
-msgstr ""
+msgstr "<b>Historial de batería</b>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "<b>Color History</b>"
-msgstr ""
+msgstr "<b>Historial de color</b>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "<b>Engine History</b>"
-msgstr ""
+msgstr "<b>Historial de motor</b>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "<b>Tire History</b>"
-msgstr ""
+msgstr "<b>Historial de neumáticos</b>"
 
 #. module: fleet_operations
 #: model:mail.template,body_html:fleet_operations.fleet_email_template
@@ -83,141 +83,160 @@ msgid ""
 "            </div>\n"
 "        "
 msgstr ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"                <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                    Estimado/a <t t-out=\"object.driver_id.name or ''\"/>,\n"
+"                    <br/>\n"
+"                    <br/>\n"
+"                    Entendemos que puede tener una agenda ocupada y queremos dejarle un recordatorio\n"
+"                    amable.\n"
+"                </p>\n"
+"                <p>\n"
+"                    Queremos recordarle que su vehículo\n"
+"                    <b>\n"
+"                        <t t-out=\"object.name or ''\"/>\n"
+"                    </b>\n"
+"                    tiene servicio programado para el <t t-out=\"object.next_service_date or ''\"/>.\n"
+"                    <br/>\n"
+"                    Gracias.\n"
+"                </p>\n"
+"            </div>\n"
+"        "
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "<span class=\"o_stat_text\">Re-Opened Services</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\">Servicios reabiertos</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span style=\"font-size:12px;font-weight: bold;\">General Accident </span>"
-msgstr ""
+msgstr "<span style=\"font-size:12px;font-weight: bold;\">Accidente general </span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span style=\"font-size:12px;font-weight: bold;\">Insurgent Attack </span>"
-msgstr ""
+msgstr "<span style=\"font-size:12px;font-weight: bold;\">Ataque insurgente </span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span style=\"font-size:14px;font-weight: bold;\">Estimated Cost :</span>"
-msgstr ""
+msgstr "<span style=\"font-size:14px;font-weight: bold;\">Costo estimado:</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid ""
 "<span style=\"font-size:14px;font-weight: bold;\">Please indicate Major "
 "Damage Information : </span>"
-msgstr ""
+msgstr "<span style=\"font-size:14px;font-weight: bold;\">Indique la información de daños mayores: </span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid ""
 "<span style=\"font-size:14px;font-weight: bold;\">Required Repairs :</span>"
-msgstr ""
+msgstr "<span style=\"font-size:14px;font-weight: bold;\">Reparaciones requeridas:</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>Cause of Damage :</span>"
-msgstr ""
+msgstr "<span>Causa del daño:</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>Color :</span>"
-msgstr ""
+msgstr "<span>Color:</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>Contact No. :</span>"
-msgstr ""
+msgstr "<span>N.º de contacto:</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>Date :</span>"
-msgstr ""
+msgstr "<span>Fecha:</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>Driver :</span>"
-msgstr ""
+msgstr "<span>Conductor:</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>Kilometers</span>"
-msgstr ""
+msgstr "<span>Kilómetros</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>Police Information : </span>"
-msgstr ""
+msgstr "<span>Información policial: </span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>Registration State :</span>"
-msgstr ""
+msgstr "<span>Estado de matrícula:</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>Service Order No. :</span>"
-msgstr ""
+msgstr "<span>N.º de orden de servicio:</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>Site Location :</span>"
-msgstr ""
+msgstr "<span>Ubicación del sitio:</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>Total Amount :</span>"
-msgstr ""
+msgstr "<span>Monto total:</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>Type :</span>"
-msgstr ""
+msgstr "<span>Tipo:</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>VIN No. :</span>"
-msgstr ""
+msgstr "<span>N.º de VIN:</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>Vehicle Information : </span>"
-msgstr ""
+msgstr "<span>Información del vehículo: </span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>Vehicle No. :</span>"
-msgstr ""
+msgstr "<span>N.º del vehículo:</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>WRITE-OFF REPORT</span>"
-msgstr ""
+msgstr "<span>INFORME DE BAJA TOTAL</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.write_off_qweb
 msgid "<span>Write-Off:</span>"
-msgstr ""
+msgstr "<span>Baja total:</span>"
 
 #. module: fleet_operations
 #: model_terms:ir.actions.act_window,help:fleet_operations.action_fleet_service_out_invoice_view
 msgid ""
 "A journal entry consists of several journal items, each of\n"
 "            which is either a debit or a credit transaction."
-msgstr ""
+msgstr "Un asiento contable consta de varios apuntes contables, cada uno de los cuales es un movimiento de débito o crédito."
 
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type03
 msgid "AC Gas"
-msgstr ""
+msgstr "AC Gas"
 
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type02
 msgid "AC Repair"
-msgstr ""
+msgstr "AC Reparación"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__description
@@ -233,69 +252,69 @@ msgstr "Activo"
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Additional Details"
-msgstr ""
+msgstr "Additional Detalles"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_wittenoff_search
 msgid "All Write off vehicles"
-msgstr ""
+msgstr "Todos Dar de baja vehicles"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__already_closed
 msgid "Already Closed?"
-msgstr ""
+msgstr "Already Closed?"
 
 #. module: fleet_operations
 #: model:vehicle.type,name:fleet_operations.vehicle_type_ambulance_1
 msgid "Ambulance"
-msgstr ""
+msgstr "Ambulance"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__update_pending_repair_history__state__confirm
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_pending_reapir_history_search_view
 msgid "Applied"
-msgstr ""
+msgstr "Applied"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_update_pending_repair_history__user_id
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_pending_reapir_history_search_view
 msgid "Applied By"
-msgstr ""
+msgstr "Applied By"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_pending_reapir_history_form_view
 msgid "Applied Pending"
-msgstr ""
+msgstr "Applied Pendiente"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_pending_reapir_history_form_view
 msgid "Apply"
-msgstr ""
+msgstr "Apply"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Are you sure you want to close this write off?"
-msgstr ""
+msgstr "Are you sure you want to close this write off?"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Are you sure you want to confirm this write off?"
-msgstr ""
+msgstr "Are you sure you want to confirm this write off?"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Are you sure you want to open this work order?"
-msgstr ""
+msgstr "Are you sure you want to open this work order?"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Are you sure you want to set Draft this write off?"
-msgstr ""
+msgstr "Are you sure you want to set Borrador this write off?"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Assignment"
-msgstr ""
+msgstr "Assignment"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_ir_attachment
@@ -310,7 +329,7 @@ msgstr "Archivos adjuntos"
 #: model:ir.model.fields,field_description:fleet_operations.field_product_document__attachment_id_2
 #: model:ir.model.fields,field_description:fleet_operations.field_quotation_document__attachment_id_2
 msgid "Attachment Id 2"
-msgstr ""
+msgstr "Attachment Id 2"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__sale_purchase_attach_ids
@@ -318,92 +337,92 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Attachments"
-msgstr ""
+msgstr "Attachments"
 
 #. module: fleet_operations
 #: model:color.color,name:fleet_operations.color_black_2
 msgid "BLACK"
-msgstr ""
+msgstr "BLACK"
 
 #. module: fleet_operations
 #: model:color.color,name:fleet_operations.color_blue_9
 msgid "BLUE"
-msgstr ""
+msgstr "BLUE"
 
 #. module: fleet_operations
 #: model:color.color,name:fleet_operations.color_brown_13
 msgid "BROWN"
-msgstr ""
+msgstr "BROWN"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/wizard/update_history.py:0
 msgid "Battery Change Date Should Be Greater Than New Battery Issuance Date."
-msgstr ""
+msgstr "Batería Cambio Fecha Should Be Greater Than New Batería Issuance Fecha."
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Battery Detail"
-msgstr ""
+msgstr "Batería Detail"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__vehicle_change_history__report_type__battery_history
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Battery History"
-msgstr ""
+msgstr "Historial de batería"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_battery_history
 msgid "Battery History for Vehicle"
-msgstr ""
+msgstr "Historial de batería for Vehículo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__battery_issuance_date
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Battery Issuance Date"
-msgstr ""
+msgstr "Batería Issuance Fecha"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "Battery Issuance Date Should Be Greater Than Registration Date."
-msgstr ""
+msgstr "Batería Issuance Fecha Should Be Greater Than Matrícula Fecha."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__battery_srno
 msgid "Battery S/N"
-msgstr ""
+msgstr "Batería S/N"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__battery_size
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Battery Size"
-msgstr ""
+msgstr "Batería Size"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__battery_history_ids
 msgid "Battrey History"
-msgstr ""
+msgstr "Battrey Historial"
 
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type04
 msgid "Beyond Economical Repair"
-msgstr ""
+msgstr "Beyond Economical Reparación"
 
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type06
 msgid "Body Repaint"
-msgstr ""
+msgstr "Carrocería Repaint"
 
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type05
 msgid "Body Repair"
-msgstr ""
+msgstr "Carrocería Reparación"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_service_type__category__both
 msgid "Both"
-msgstr ""
+msgstr "Both"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_fleet_vehicle_model_brand
@@ -414,28 +433,28 @@ msgstr "Marca del vehículo"
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type07
 msgid "Break System"
-msgstr ""
+msgstr "Break System"
 
 #. module: fleet_operations
 #: model:vehicle.type,name:fleet_operations.vehicle_type_bus_2
 msgid "Bus"
-msgstr ""
+msgstr "Bus"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__buyer_id
 msgid "Buyer"
-msgstr ""
+msgstr "Buyer"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_pending_applied_history__user_id
 #: model:ir.model.fields,field_description:fleet_operations.field_pending_repair_type__user_id
 msgid "By"
-msgstr ""
+msgstr "By"
 
 #. module: fleet_operations
 #: model:damage.types,name:fleet_operations.damage_type_07
 msgid "CHASSIS"
-msgstr ""
+msgstr "CHASSIS"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle_log_services__state__cancel
@@ -455,43 +474,43 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_writeoff_cancel_reason_wizard
 #: model_terms:ir.ui.view,arch_db:fleet_operations.wo_report_form_view
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Cancel By"
-msgstr ""
+msgstr "Cancelar By"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Cancel Date"
-msgstr ""
+msgstr "Cancelar Fecha"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__cancel_note
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Cancel Note"
-msgstr ""
+msgstr "Cancelar Note"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_wittenoff__state__cancel
 msgid "Cancelled"
-msgstr ""
+msgstr "Cancelado"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__cancel_by_id
 msgid "Cancelled By"
-msgstr ""
+msgstr "Cancelado By"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Capacity"
-msgstr ""
+msgstr "Capacity"
 
 #. module: fleet_operations
 #: model:vehicle.type,name:fleet_operations.vehicle_type_car_5
 msgid "Car"
-msgstr ""
+msgstr "Car"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_service_type__category
@@ -504,7 +523,7 @@ msgstr "Categoría"
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__note_for_cause_damage
 msgid "Cause of Damage"
-msgstr ""
+msgstr "Causa del daño"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_battery_history__changed_date
@@ -519,22 +538,22 @@ msgstr ""
 #: model:ir.model.fields,field_description:fleet_operations.field_vin_history__changed_date
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "Change Date"
-msgstr ""
+msgstr "Cambio Fecha"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Chassis Number"
-msgstr ""
+msgstr "Chassis Número"
 
 #. module: fleet_operations
 #: model:ir.ui.menu,name:fleet_operations.work_order_advance_search_sub_menu
 msgid "Check Service Status"
-msgstr ""
+msgstr "Check Servicio Estado"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.fleet_work_order_advance_search_act
 msgid "Check Services Status"
-msgstr ""
+msgstr "Check Services Estado"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_fleet_service_type__category
@@ -550,28 +569,28 @@ msgstr ""
 #: model:ir.model.fields,field_description:fleet_operations.field_stock_picking_xls_report__file
 #: model:ir.model.fields,field_description:fleet_operations.field_work_order_reports__file
 msgid "Click On Download Link To Download Xls File"
-msgstr ""
+msgstr "Click On Download Link To Download Xls File"
 
 #. module: fleet_operations
 #: model_terms:ir.actions.act_window,help:fleet_operations.fleet_vehicle_witten_off_act
 msgid "Click to create a new write off entry."
-msgstr ""
+msgstr "Click to create a new write off entry."
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_work_order_search__state__done
 msgid "Close"
-msgstr ""
+msgstr "Close"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__closed_by
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Closed By"
-msgstr ""
+msgstr "Closed By"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_fleet_vehicle_log_services__date_close
 msgid "Closing Date of Work Order"
-msgstr ""
+msgstr "Closing Fecha of Orden de trabajo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_color_color__code
@@ -583,7 +602,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.damage_type_form_view
 #: model_terms:ir.ui.view,arch_db:fleet_operations.damage_type_tree_view
 msgid "Code"
-msgstr ""
+msgstr "Code"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.color_color_act
@@ -592,30 +611,30 @@ msgstr ""
 #: model:ir.ui.menu,name:fleet_operations.color_color_menu
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Color"
-msgstr ""
+msgstr "Color"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/wizard/update_history.py:0
 msgid "Color Change Date Should Be Greater Than Vehicle Registration Date."
-msgstr ""
+msgstr "Color Cambio Fecha Should Be Greater Than Vehículo Matrícula Fecha."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__color_history_ids
 #: model:ir.model.fields.selection,name:fleet_operations.selection__vehicle_change_history__report_type__color_history
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Color History"
-msgstr ""
+msgstr "Historial de color"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_color_history
 msgid "Color History for Vehicle"
-msgstr ""
+msgstr "Historial de color for Vehículo"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_color_color
 msgid "Colors"
-msgstr ""
+msgstr "Colors"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_res_company
@@ -631,12 +650,12 @@ msgstr "Nombre de la empresa"
 #: model:ir.model.fields.selection,name:fleet_operations.selection__pending_applied_history__state__complete
 #: model:ir.model.fields.selection,name:fleet_operations.selection__pending_repair_type__state__complete
 msgid "Complete"
-msgstr ""
+msgstr "Complete"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_service_repair_line__date_complete
 msgid "Complete Date"
-msgstr ""
+msgstr "Complete Fecha"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_service_repair_line__complete
@@ -644,20 +663,20 @@ msgstr ""
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle_advance_search__state__complete
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Completed"
-msgstr ""
+msgstr "Completed"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 #: model_terms:ir.ui.view,arch_db:fleet_operations.pending_repair_confirm_form_view
 msgid "Confirm"
-msgstr ""
+msgstr "Confirmar"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.continue_pending_repair_form_view
 #: model_terms:ir.ui.view,arch_db:fleet_operations.pending_repair_confirm_form_view
 msgid "Confirm WO Forcefully"
-msgstr ""
+msgstr "Confirmar WO Forcefully"
 
 #. module: fleet_operations
 #. odoo-python
@@ -665,12 +684,12 @@ msgstr ""
 msgid ""
 "Confirm work order can only when vehicle status is in Inspection or "
 "Released!"
-msgstr ""
+msgstr "La orden de trabajo solo se puede confirmar cuando el estado del vehículo es En inspección o Liberado."
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_wittenoff__state__confirm
 msgid "Confirmed"
-msgstr ""
+msgstr "Confirmado"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_res_partner
@@ -680,7 +699,7 @@ msgstr "Contacto"
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_contact_team_trip_ticket_xls
 msgid "Contact Team Trip Ticket Report"
-msgstr ""
+msgstr "Contact Equipo Trip Ticket Informe"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_service_type__category__contract
@@ -690,39 +709,39 @@ msgstr "Contrato"
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type08
 msgid "Cooling System"
-msgstr ""
+msgstr "Cooling System"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_service_task__total_type
 msgid "Cost"
-msgstr ""
+msgstr "Costo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__cost_esitmation
 msgid "Cost Estimation"
-msgstr ""
+msgstr "Costo Estimation"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Create Invoice"
-msgstr ""
+msgstr "Crear Factura"
 
 #. module: fleet_operations
 #: model_terms:ir.actions.act_window,help:fleet_operations.action_fleet_service_out_refund_invoice_view
 msgid "Create a customer invoice"
-msgstr ""
+msgstr "Crear a customer invoice"
 
 #. module: fleet_operations
 #: model_terms:ir.actions.act_window,help:fleet_operations.action_fleet_service_out_invoice_view
 msgid "Create a journal entry"
-msgstr ""
+msgstr "Crear a journal entry"
 
 #. module: fleet_operations
 #: model_terms:ir.actions.act_window,help:fleet_operations.action_fleet_service_out_refund_invoice_view
 msgid ""
 "Create invoices, register payments and keep track of the discussions with "
 "your customers."
-msgstr ""
+msgstr "Cree facturas, registre pagos y haga seguimiento de las conversaciones con sus clientes."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_battery_history__create_uid
@@ -771,7 +790,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:fleet_operations.field_workorder_parts_history_details__create_uid
 #: model:ir.model.fields,field_description:fleet_operations.field_writeoff_cancel_reason__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado by"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_battery_history__create_date
@@ -820,47 +839,47 @@ msgstr ""
 #: model:ir.model.fields,field_description:fleet_operations.field_workorder_parts_history_details__create_date
 #: model:ir.model.fields,field_description:fleet_operations.field_writeoff_cancel_reason__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado on"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__currency_id
 msgid "Currency"
-msgstr ""
+msgstr "Currency"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__resale_value
 msgid "Current value"
-msgstr ""
+msgstr "Actual value"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__cylinders
 msgid "Cylinders"
-msgstr ""
+msgstr "Cylinders"
 
 #. module: fleet_operations
 #: model:color.color,name:fleet_operations.color_dark_green_12
 msgid "DARK GREEN"
-msgstr ""
+msgstr "DARK GREEN"
 
 #. module: fleet_operations
 #: model:color.color,name:fleet_operations.color_dark_red_3
 msgid "DARK RED"
-msgstr ""
+msgstr "DARK RED"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.repair_line_summary_qweb
 msgid "DATE"
-msgstr ""
+msgstr "DATE"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_daily_parts_issuance_wizard_xls
 msgid "Daily Parts Insurance"
-msgstr ""
+msgstr "Daily Repuestos Seguro"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__damage_type_ids
 msgid "Damage Type"
-msgstr ""
+msgstr "Daño Tipo"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.damage_type_action
@@ -868,12 +887,12 @@ msgstr ""
 #: model:ir.ui.menu,name:fleet_operations.damage_type_menu
 #: model_terms:ir.ui.view,arch_db:fleet_operations.damage_type_form_view
 msgid "Damage Types"
-msgstr ""
+msgstr "Daño Types"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Damages and Repair"
-msgstr ""
+msgstr "Damages and Reparación"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_odometer__date
@@ -883,12 +902,12 @@ msgstr "Fecha"
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__date_cancel
 msgid "Date Cancelled"
-msgstr ""
+msgstr "Fecha Cancelado"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__date_close
 msgid "Date Close"
-msgstr ""
+msgstr "Fecha Close"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_repair_line_summary__date_from
@@ -896,13 +915,13 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_repair_line_summary_wiz
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_vehicle_change_history_wiz
 msgid "Date From"
-msgstr ""
+msgstr "Fecha From"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__date_sold
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Date Sold"
-msgstr ""
+msgstr "Fecha Sold"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_repair_line_summary__date_to
@@ -910,18 +929,18 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_repair_line_summary_wiz
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_vehicle_change_history_wiz
 msgid "Date To"
-msgstr ""
+msgstr "Fecha To"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_task_line__date_issued
 msgid "Date issued"
-msgstr ""
+msgstr "Fecha issued"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_fleet_vehicle_log_services__date_complete
 #: model:ir.model.fields,help:fleet_operations.field_service_repair_line__date_complete
 msgid "Date when the service is completed"
-msgstr ""
+msgstr "Fecha when the service is completed"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_next_service_days__days
@@ -930,39 +949,39 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.next_service_days_tree
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_update_next_service_view
 msgid "Days"
-msgstr ""
+msgstr "Days"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__dealer_id
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Dealer"
-msgstr ""
+msgstr "Dealer"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__payment_deduction
 msgid "Deduction"
-msgstr ""
+msgstr "Deduction"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__delivery_count
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Delivery"
-msgstr ""
+msgstr "Delivery"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Delivery Orders"
-msgstr ""
+msgstr "Delivery Orders"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__delivery_id
 msgid "Delivery Reference"
-msgstr ""
+msgstr "Delivery Referencia"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__deposit_receive
 msgid "Deposit Received?"
-msgstr ""
+msgstr "Deposit Recibido?"
 
 #. module: fleet_operations
 #. odoo-python
@@ -971,6 +990,8 @@ msgid ""
 "Deposit Return invoice is already Pending\n"
 "Please proceed that deposit invoice first"
 msgstr ""
+"La factura de devolución de depósito ya está pendiente.\n"
+"Primero procese esa factura de depósito."
 
 #. module: fleet_operations
 #. odoo-python
@@ -979,26 +1000,28 @@ msgid ""
 "Deposit invoice is already Pending\n"
 "Please proceed that deposit invoice first"
 msgstr ""
+"La factura de depósito ya está pendiente.\n"
+"Primero procese esa factura de depósito."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__monthly_deprication
 msgid "Deprication(Monthly)"
-msgstr ""
+msgstr "Deprication(Monthly)"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Dimensions"
-msgstr ""
+msgstr "Dimensions"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Dimensions And Capacity"
-msgstr ""
+msgstr "Dimensions And Capacity"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_battery_history__display_name
@@ -1047,7 +1070,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:fleet_operations.field_workorder_parts_history_details__display_name
 #: model:ir.model.fields,field_description:fleet_operations.field_writeoff_cancel_reason__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Display Nombre"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.vehical_divison_act
@@ -1056,19 +1079,19 @@ msgstr ""
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__vehical_division_id
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__division_id
 msgid "Division"
-msgstr ""
+msgstr "Division"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.pending_repair_confirm_form_view
 msgid ""
 "Do you Forcefully want to close the WO because there is some repair types "
 "which are selected for repair but not completed"
-msgstr ""
+msgstr "¿Desea cerrar forzosamente la OT porque hay tipos de reparación seleccionados pero no completados?"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_report_heading__document_no
 msgid "Document No."
-msgstr ""
+msgstr "Document No."
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle_log_services__state__done
@@ -1081,19 +1104,19 @@ msgstr "Listo"
 #: model_terms:ir.ui.view,arch_db:fleet_operations.recieved_part_wizard_form
 #: model_terms:ir.ui.view,arch_db:fleet_operations.wo_report_form_view
 msgid "Download"
-msgstr ""
+msgstr "Download"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle__state__inspection
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_wittenoff__state__draft
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_work_order_search__state__draft
 msgid "Draft"
-msgstr ""
+msgstr "Borrador"
 
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type09
 msgid "Drive Train"
-msgstr ""
+msgstr "Drive Train"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__driver_id
@@ -1106,20 +1129,20 @@ msgstr "Conductor"
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Driver Contact"
-msgstr ""
+msgstr "Conductor Contact"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__driver_contact_no
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__contact_no
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Driver Contact Number"
-msgstr ""
+msgstr "Conductor Contact Número"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__driver_identification_no
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_advance_search__driver_identification_no
 msgid "Driver ID"
-msgstr ""
+msgstr "Conductor ID"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_fleet_vehicle__driver_id
@@ -1131,61 +1154,61 @@ msgstr "Dirección del conductor del vehículo"
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "Driver can be allocated to one vehicle only!"
-msgstr ""
+msgstr "Conductor can be allocated to one vehicle only!"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Drivers History"
-msgstr ""
+msgstr "Drivers Historial"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__due_odometer_unit
 msgid "Due Odometer Units"
-msgstr ""
+msgstr "Vencimiento Odómetro Units"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_trip_encoded_history__dummy_encoded_qty
 msgid "Dummy Encoded Qty"
-msgstr ""
+msgstr "Dummy Encoded Qty"
 
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type10
 msgid "Electrical System"
-msgstr ""
+msgstr "Electrical System"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_trip_encoded_history__encoded_qty
 #: model:ir.model.fields,field_description:fleet_operations.field_workorder_parts_history_details__used_qty
 msgid "Encoded Qty"
-msgstr ""
+msgstr "Encoded Qty"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__end_date_insurance
 msgid "End Date"
-msgstr ""
+msgstr "End Fecha"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/wizard/update_history.py:0
 msgid "Engine Change Date Should Be Greater Than Vehicle Registration Date."
-msgstr ""
+msgstr "Motor Cambio Fecha Should Be Greater Than Vehículo Matrícula Fecha."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__engine_history_ids
 #: model:ir.model.fields.selection,name:fleet_operations.selection__vehicle_change_history__report_type__engine_history
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Engine History"
-msgstr ""
+msgstr "Historial de motor"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_engine_history
 msgid "Engine History for Vehicle"
-msgstr ""
+msgstr "Historial de motor for Vehículo"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Engine Model"
-msgstr ""
+msgstr "Motor Modelo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__engine_no
@@ -1193,211 +1216,211 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Engine No"
-msgstr ""
+msgstr "Motor No"
 
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type11
 msgid "Engine Overhaul"
-msgstr ""
+msgstr "Motor Overhaul"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Engine Parameters"
-msgstr ""
+msgstr "Motor Parameters"
 
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type12
 msgid "Engine Repair"
-msgstr ""
+msgstr "Motor Reparación"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__engine_size
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Engine Size"
-msgstr ""
+msgstr "Motor Size"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Engine Specifications"
-msgstr ""
+msgstr "Motor Specifications"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Equipment Detail"
-msgstr ""
+msgstr "Equipment Detail"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Estimated Date"
-msgstr ""
+msgstr "Estimado Fecha"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "Estimated Date Should Be Greater Than Issue Date."
-msgstr ""
+msgstr "Estimado Fecha Should Be Greater Than Incidencia Fecha."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__etic
 msgid "Estimated Time"
-msgstr ""
+msgstr "Estimado Hora"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_fleet_vehicle_log_services__etic
 msgid "Estimated Time In Completion"
-msgstr ""
+msgstr "Estimado Hora In Completion"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.excel_sg_leave_summary_report_wiz
 msgid "Excel Export"
-msgstr ""
+msgstr "Excel Export"
 
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type13
 msgid "Exhaust System"
-msgstr ""
+msgstr "Exhaust System"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__expence_acc_id
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Expense Account"
-msgstr ""
+msgstr "Gasto Account"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Expense To Repair"
-msgstr ""
+msgstr "Gasto To Reparación"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "Expense to repair cost should not be negative!"
-msgstr ""
+msgstr "Gasto to repair cost should not be negative!"
 
 #. module: fleet_operations
 #: model:mail.template,name:fleet_operations.fleet_email_template
 msgid "Expired service: Send by email"
-msgstr ""
+msgstr "Expired service: Send by email"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Extra Note.."
-msgstr ""
+msgstr "Extra Note.."
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Features"
-msgstr ""
+msgstr "Features"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Filter By Main Type ..."
-msgstr ""
+msgstr "Filter By Principal Tipo ..."
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_pending_reapir_history_search_view
 msgid "Filter By Status ..."
-msgstr ""
+msgstr "Filter By Estado ..."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__fleet_attach_ids
 msgid "Fleet Attachments"
-msgstr ""
+msgstr "Flota Attachments"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__print_fleet_history__sel_report__complete_stage
 msgid "Fleet Complete Stage"
-msgstr ""
+msgstr "Flota Complete Stage"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/report/fleet_history.py:0
 msgid "Fleet Complete Stage Report"
-msgstr ""
+msgstr "Flota Complete Stage Informe"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.action_res_partner_driver
 #: model:ir.ui.menu,name:fleet_operations.fleet_driver_menu
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_driver_search_view
 msgid "Fleet Driver"
-msgstr ""
+msgstr "Flota Conductor"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_excel_fleet_report
 msgid "Fleet Excel Report"
-msgstr ""
+msgstr "Flota Excel Informe"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__print_fleet_history__sel_report__history
 msgid "Fleet History"
-msgstr ""
+msgstr "Flota Historial"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/report/fleet_history.py:0
 msgid "Fleet History Report"
-msgstr ""
+msgstr "Flota Historial Informe"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_fleet_history_work_order_xls
 msgid "Fleet History Work Order"
-msgstr ""
+msgstr "Flota Historial Orden de trabajo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__fleet_id
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__fleet_id
 msgid "Fleet ID"
-msgstr ""
+msgstr "Flota ID"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__print_fleet_history__sel_report__listing
 msgid "Fleet Listing"
-msgstr ""
+msgstr "Flota Listing"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/report/fleet_history.py:0
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_fleet_summary_xls
 msgid "Fleet Listing Report"
-msgstr ""
+msgstr "Flota Listing Informe"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_outstanding_wo_xls
 msgid "Fleet Outstanding Workorder Report"
-msgstr ""
+msgstr "Flota Pendiente Workorder Informe"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_fleet_pending_repairs_xls
 msgid "Fleet Pending Repair Report"
-msgstr ""
+msgstr "Flota Pendiente Reparación Informe"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__print_fleet_history__sel_report__pending_repair_summary
 msgid "Fleet Pending Repair Summary"
-msgstr ""
+msgstr "Flota Pendiente Reparación Resumen"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/report/fleet_history.py:0
 msgid "Fleet Pending Repair Summary Report"
-msgstr ""
+msgstr "Flota Pendiente Reparación Resumen Informe"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__print_fleet_history__sel_report__pending_repairs
 msgid "Fleet Pending Repairs"
-msgstr ""
+msgstr "Flota Pendiente Repairs"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/report/fleet_history.py:0
 msgid "Fleet Pending Repairs Report"
-msgstr ""
+msgstr "Flota Pendiente Repairs Informe"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_fleet_pending_xls
 msgid "Fleet Pending Report"
-msgstr ""
+msgstr "Flota Pendiente Informe"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_fleet_service_type
@@ -1407,32 +1430,32 @@ msgstr "Tipo de servicio de la flotilla"
 #. module: fleet_operations
 #: model:ir.actions.server,name:fleet_operations.fleet_mail_service_ir_actions_server
 msgid "Fleet Vehicle Service Reminder."
-msgstr ""
+msgstr "Flota Vehículo Servicio Reminder."
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_fleet_wait_collection_xls
 msgid "Fleet Waiting Collection Report"
-msgstr ""
+msgstr "Flota En espera Collection Informe"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_fleet_work_order_search
 msgid "Fleet Work order Search"
-msgstr ""
+msgstr "Flota Trabajo order Buscar"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_workorder_summary_xls
 msgid "Fleet WorkOrder Reports"
-msgstr ""
+msgstr "Flota WorkOrder Reports"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.action_print_fleet_history
 msgid "Fleet xlsx Report"
-msgstr ""
+msgstr "Flota xlsx Informe"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Fluids"
-msgstr ""
+msgstr "Fluids"
 
 #. module: fleet_operations
 #. odoo-python
@@ -1440,102 +1463,102 @@ msgstr ""
 msgid ""
 "Form content is missing,                                 this report cannot "
 "be printed."
-msgstr ""
+msgstr "Falta contenido del formulario; este informe no se puede imprimir."
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/report/vehicle_change_history.py:0
 msgid ""
 "Form content is missing,                     this report cannot be printed."
-msgstr ""
+msgstr "Falta contenido del formulario; este informe no se puede imprimir."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__from_migration
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "From Migration"
-msgstr ""
+msgstr "From Migration"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__front_tire_pressure
 msgid "Front Tire Pressure"
-msgstr ""
+msgstr "Front Tire Pressure"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__front_tire_size
 msgid "Front Tire Size"
-msgstr ""
+msgstr "Front Tire Size"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Fuel"
-msgstr ""
+msgstr "Combustible"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__fuel_capacity
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Fuel Capacity"
-msgstr ""
+msgstr "Combustible Capacity"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__fuel_qty
 msgid "Fuel Quality"
-msgstr ""
+msgstr "Combustible Quality"
 
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type14
 msgid "Fuel System"
-msgstr ""
+msgstr "Combustible System"
 
 #. module: fleet_operations
 #: model:color.color,name:fleet_operations.color_gold_7
 msgid "GOLD"
-msgstr ""
+msgstr "GOLD"
 
 #. module: fleet_operations
 #: model:color.color,name:fleet_operations.color_gray_8
 msgid "GRAY"
-msgstr ""
+msgstr "GRAY"
 
 #. module: fleet_operations
 #: model:color.color,name:fleet_operations.color_green_10
 msgid "GREEN"
-msgstr ""
+msgstr "GREEN"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_wittenoff__write_off_type__general_accident
 msgid "General Accident"
-msgstr ""
+msgstr "Accidente general"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_general_parts_listing_xls
 msgid "Genral Parts Listing Reports"
-msgstr ""
+msgstr "Genral Repuestos Listing Reports"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_pending_reapir_history_search_view
 msgid "Group By..."
-msgstr ""
+msgstr "Group By..."
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle_log_services__priority__high
 msgid "HIGH"
-msgstr ""
+msgstr "HIGH"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__vehicle_height
 msgid "Height(mm)"
-msgstr ""
+msgstr "Height(mm)"
 
 #. module: fleet_operations
 #: model:res.groups,name:fleet_operations.group_hide_menus
 msgid "Hide Menu"
-msgstr ""
+msgstr "Hide Menu"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "History"
-msgstr ""
+msgstr "Historial"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_battery_history__id
@@ -1584,22 +1607,22 @@ msgstr ""
 #: model:ir.model.fields,field_description:fleet_operations.field_workorder_parts_history_details__id
 #: model:ir.model.fields,field_description:fleet_operations.field_writeoff_cancel_reason__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_partner_form_extended
 msgid "ID-Card"
-msgstr ""
+msgstr "ID-Card"
 
 #. module: fleet_operations
 #: model:damage.types,name:fleet_operations.damage_type_03
 msgid "INTERIOR"
-msgstr ""
+msgstr "INTERIOR"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Identification"
-msgstr ""
+msgstr "Identification"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_model__image_128
@@ -1610,200 +1633,200 @@ msgstr "Imagen 128"
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_report_heading__image_medium
 msgid "Image Medium"
-msgstr ""
+msgstr "Image Medium"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_report_heading__image_small
 msgid "Image Small"
-msgstr ""
+msgstr "Image Small"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__pending_applied_history__state__in-complete
 msgid "In Complete"
-msgstr ""
+msgstr "In Complete"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle_advance_search__state__in_progress
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "In Progress"
-msgstr ""
+msgstr "In Progress"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle__state__in_progress
 msgid "In Service"
-msgstr ""
+msgstr "In Servicio"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_product_product__in_active_part
 #: model:ir.model.fields,field_description:fleet_operations.field_product_template__in_active_part
 msgid "In-Active Part?"
-msgstr ""
+msgstr "In-Active Part?"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__income_acc_id
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Income Account"
-msgstr ""
+msgstr "Income Account"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_service_task__maintenance_info
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Information"
-msgstr ""
+msgstr "Información"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle_advance_search__state__inspection
 #: model:repair.type,name:fleet_operations.nds_repair_type01
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Inspection"
-msgstr ""
+msgstr "Inspection"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_res_partner__insurance
 #: model:ir.model.fields,field_description:fleet_operations.field_res_users__insurance
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_partner_form_extended
 msgid "Insurance"
-msgstr ""
+msgstr "Seguro"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__insurance_company_id
 msgid "Insurance Company"
-msgstr ""
+msgstr "Seguro Compañía"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Insurance Terms"
-msgstr ""
+msgstr "Seguro Terms"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__insurance_type_id
 #: model_terms:ir.ui.view,arch_db:fleet_operations.insurance_type_form
 msgid "Insurance Type"
-msgstr ""
+msgstr "Seguro Tipo"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "Insurance end date should be greater than start date."
-msgstr ""
+msgstr "Seguro end date should be greater than start date."
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "Insurance start date should be greater than registration date."
-msgstr ""
+msgstr "Seguro start date should be greater than registration date."
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_wittenoff__write_off_type__insurgent_attack
 #: model:repair.type,name:fleet_operations.nds_repair_type15
 msgid "Insurgent Attack"
-msgstr ""
+msgstr "Ataque insurgente"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__invoice_count
 msgid "Invoice Count"
-msgstr ""
+msgstr "Factura Count"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__amount_receive
 msgid "Invoice Receive"
-msgstr ""
+msgstr "Factura Recibir"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__amount_return
 msgid "Invoice Return"
-msgstr ""
+msgstr "Factura Return"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_print
 msgid "Invoice Sales Order"
-msgstr ""
+msgstr "Factura Sales Orden"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.action_fleet_service_out_invoice_view
 #: model:ir.actions.act_window,name:fleet_operations.action_fleet_service_out_refund_invoice_view
 msgid "Invoices"
-msgstr ""
+msgstr "Invoices"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__is_color_set
 msgid "Is Color Set?"
-msgstr ""
+msgstr "Is Color Set?"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_task_line__is_deliver
 msgid "Is Deliver?"
-msgstr ""
+msgstr "Is Deliver?"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_res_partner__is_driver
 #: model:ir.model.fields,field_description:fleet_operations.field_res_users__is_driver
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_partner_form_extended
 msgid "Is Driver"
-msgstr ""
+msgstr "Is Conductor"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__is_engine_set
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Is Engine Set"
-msgstr ""
+msgstr "Is Motor Set"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__is_id_generated
 msgid "Is Id Generated?"
-msgstr ""
+msgstr "Is Id Generated?"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__is_parts
 msgid "Is Parts Available?"
-msgstr ""
+msgstr "Is Repuestos Disponible?"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_account_bank_statement_line__is_invoice_return
 #: model:ir.model.fields,field_description:fleet_operations.field_account_move__is_invoice_return
 msgid "Is Service Invoice Deposit"
-msgstr ""
+msgstr "Is Servicio Factura Deposit"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_account_bank_statement_line__is_invoice_receive
 #: model:ir.model.fields,field_description:fleet_operations.field_account_move__is_invoice_receive
 msgid "Is Service Invoice Receive"
-msgstr ""
+msgstr "Is Servicio Factura Recibir"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__is_tire_issue_set
 msgid "Is Tire Issue set?"
-msgstr ""
+msgstr "Is Tire Incidencia set?"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__is_tire_size_set
 msgid "Is Tire Size set?"
-msgstr ""
+msgstr "Is Tire Size set?"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__is_tire_srno_set
 msgid "Is Tire Srno set?"
-msgstr ""
+msgstr "Is Tire Srno set?"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__is_vin_set
 msgid "Is Vin Set?"
-msgstr ""
+msgstr "Is Vin Set?"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__is_battery_issue_set
 msgid "Is battery Issue set?"
-msgstr ""
+msgstr "Is battery Incidencia set?"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__is_battery_size_set
 msgid "Is battery Size set?"
-msgstr ""
+msgstr "Is battery Size set?"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__is_battery_srno_set
 msgid "Is battery Srno set?"
-msgstr ""
+msgstr "Is battery Srno set?"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_pending_applied_history__issue_date
@@ -1812,33 +1835,33 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.pending_repair_type_tree_view
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_pending_reapir_history_form_view
 msgid "Issue Date"
-msgstr ""
+msgstr "Incidencia Fecha"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_task_line__issued_by
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Issued By"
-msgstr ""
+msgstr "Issued By"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__date_complete
 msgid "Issued Complete "
-msgstr ""
+msgstr "Issued Complete "
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_workorder_parts_history_details__used_date
 msgid "Issued Date"
-msgstr ""
+msgstr "Issued Fecha"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_service_repair_line__issue_date
 msgid "Issued Date "
-msgstr ""
+msgstr "Issued Fecha "
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_workorder_parts_history_details__issued_by
 msgid "Issued by"
-msgstr ""
+msgstr "Issued by"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_account_move
@@ -1850,37 +1873,37 @@ msgstr "Asiento contable"
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle__last_odometer_unit__kilometers
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_wittenoff__odometer_unit__kilometers
 msgid "Kilometers"
-msgstr ""
+msgstr "Kilómetros"
 
 #. module: fleet_operations
 #: model:damage.types,name:fleet_operations.damage_type_01
 msgid "LEFT HAND FRONT"
-msgstr ""
+msgstr "LEFT HAND FRONT"
 
 #. module: fleet_operations
 #: model:damage.types,name:fleet_operations.damage_type_05
 msgid "LEFT HAND FRONT SUSPENSION"
-msgstr ""
+msgstr "LEFT HAND FRONT SUSPENSION"
 
 #. module: fleet_operations
 #: model:damage.types,name:fleet_operations.damage_type_02
 msgid "LEFT HAND MIDDLE"
-msgstr ""
+msgstr "LEFT HAND MIDDLE"
 
 #. module: fleet_operations
 #: model:damage.types,name:fleet_operations.damage_type_04
 msgid "LEFT HAND REAR"
-msgstr ""
+msgstr "LEFT HAND REAR"
 
 #. module: fleet_operations
 #: model:damage.types,name:fleet_operations.damage_type_06
 msgid "LEFT HAND REAR SUSPENSION"
-msgstr ""
+msgstr "LEFT HAND REAR SUSPENSION"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle_log_services__priority__low
 msgid "LOW"
-msgstr ""
+msgstr "LOW"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__odometer
@@ -1891,43 +1914,43 @@ msgstr "Último odómetro"
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__last_odometer_unit
 msgid "Last Odometer Unit"
-msgstr ""
+msgstr "Last Odómetro Unidad"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__last_service_date
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Last Service"
-msgstr ""
+msgstr "Last Servicio"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__last_service_by_id
 msgid "Last Service By"
-msgstr ""
+msgstr "Last Servicio By"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Last Service Date"
-msgstr ""
+msgstr "Last Servicio Fecha"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_advance_search__last_service_date
 msgid "Last Service From"
-msgstr ""
+msgstr "Last Servicio From"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__last_odometer
 msgid "Last Service Odometer"
-msgstr ""
+msgstr "Last Servicio Odómetro"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_advance_search__last_service_date_to
 msgid "Last Service To"
-msgstr ""
+msgstr "Last Servicio To"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__last_change_status_date
 msgid "Last Status Changed Date"
-msgstr ""
+msgstr "Last Estado Changed Fecha"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_battery_history__write_uid
@@ -1976,7 +1999,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:fleet_operations.field_workorder_parts_history_details__write_uid
 #: model:ir.model.fields,field_description:fleet_operations.field_writeoff_cancel_reason__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Last Updated by"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_battery_history__write_date
@@ -2025,12 +2048,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:fleet_operations.field_workorder_parts_history_details__write_date
 #: model:ir.model.fields,field_description:fleet_operations.field_writeoff_cancel_reason__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Last Updated on"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__vehicle_length
 msgid "Length(mm)"
-msgstr ""
+msgstr "Length(mm)"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__license_plate
@@ -2051,107 +2074,107 @@ msgstr ""
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "List of Released Vehicle"
-msgstr ""
+msgstr "List of Released Vehículo"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_pending_reapir_history_search_view
 msgid "List of applied pending history"
-msgstr ""
+msgstr "List of applied pending history"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "List of completed service vehicle"
-msgstr ""
+msgstr "List of completed service vehículo"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_pending_reapir_history_search_view
 msgid "List of new pending history"
-msgstr ""
+msgstr "List of new pending history"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "List of pending service vehicle"
-msgstr ""
+msgstr "List of pending service vehículo"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "List of vehicle those are in inspection"
-msgstr ""
+msgstr "List of vehículo aquellos are in inspection"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "List of vehicle those are in onrent"
-msgstr ""
+msgstr "List of vehículo aquellos are in onrent"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "List of vehicle those are in workshop for service"
-msgstr ""
+msgstr "List of vehículo aquellos are in workshop for service"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "List of vehicle those are write-off"
-msgstr ""
+msgstr "List of vehículo aquellos are baja"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "List of vehicle with non-vehcile type"
-msgstr ""
+msgstr "List of vehículo with non-vehcile type"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "List of vehicle with non-write off"
-msgstr ""
+msgstr "List of vehículo with non-write off"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "List of vehicle with vehicle type"
-msgstr ""
+msgstr "List of vehículo with vehículo type"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__location_id
 msgid "Location"
-msgstr ""
+msgstr "Ubicación"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__wrk_location_id
 #: model:ir.model.fields,field_description:fleet_operations.field_vehicle_unique_sequence__vehicle_location_id
 msgid "Location "
-msgstr ""
+msgstr "Ubicación "
 
 #. module: fleet_operations
 #: model:ir.model.constraint,message:fleet_operations.constraint_vehicle_unique_sequence_location_make_name_uniq
 msgid ""
 "Location, Make and Sequence all should be                 unique for unique "
 "sequence!"
-msgstr ""
+msgstr "Ubicación, marca y secuencia deben ser únicas para una secuencia única."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__note
 msgid "Log Notes"
-msgstr ""
+msgstr "Log Notes"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__main_type
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__main_type
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Main Type"
-msgstr ""
+msgstr "Principal Tipo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_service_task__main_id
 msgid "Maintanace Reference"
-msgstr ""
+msgstr "Maintanace Referencia"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Maintenance"
-msgstr ""
+msgstr "Mantenimiento"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_service_task
 msgid "Maintenance of the Task "
-msgstr ""
+msgstr "Mantenimiento of the Task "
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__f_brand_id
@@ -2174,19 +2197,19 @@ msgid ""
 "with aspect ratio preserved, only when the image exceeds one of those"
 "                                  sizes. Use this field in form views or"
 "                                  some kanban views."
-msgstr ""
+msgstr "Medium-sized image of the Informe.                                  It is automatically resized as a 128x128px                                 image, with aspect ratio preserved, only when the image exceeds one of aquellos                                  sizes. Use this field in form views or                                  some kanban views."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__mileage
 msgid "Mileage(K/H)"
-msgstr ""
+msgstr "Mileage(K/H)"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle__due_odometer_unit__miles
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle__last_odometer_unit__miles
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_wittenoff__odometer_unit__miles
 msgid "Miles"
-msgstr ""
+msgstr "Miles"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_advance_search__model_id
@@ -2194,25 +2217,25 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_odometer_search_view
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Model"
-msgstr ""
+msgstr "Modelo"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "Model Brand with this name already exists!"
-msgstr ""
+msgstr "Modelo Marca with this name already exists!"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__model_no
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Model No"
-msgstr ""
+msgstr "Modelo No"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "Model is not selected for this vehicle!"
-msgstr ""
+msgstr "Modelo is not selected for this vehicle!"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_model__name
@@ -2227,29 +2250,29 @@ msgstr "Modelo de un vehículo"
 #. module: fleet_operations
 #: model:ir.model.constraint,message:fleet_operations.constraint_fleet_vehicle_model_model_brand_name_uniq
 msgid "Model with this brand Name and Make is already exist!"
-msgstr ""
+msgstr "Modelo with this brand Nombre and Make is already exist!"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_most_used_parts_xls
 msgid "Most Used Parts Report"
-msgstr ""
+msgstr "Most Used Repuestos Informe"
 
 #. module: fleet_operations
 #: model:vehicle.type,name:fleet_operations.vehicle_type_motorbike_3
 msgid "Motorbike"
-msgstr ""
+msgstr "Motorbike"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__multi_images
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__multi_images
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Multi Images"
-msgstr ""
+msgstr "Multi Images"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle_log_services__priority__normal
 msgid "NORMAL"
-msgstr ""
+msgstr "NORMAL"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_color_color__name
@@ -2286,14 +2309,14 @@ msgstr "Nombre"
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_need_to_order_parts_xls
 msgid "Need to Order Parts Report"
-msgstr ""
+msgstr "Need to Orden Repuestos Informe"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle_log_services__state__draft
 #: model:ir.model.fields.selection,name:fleet_operations.selection__update_pending_repair_history__state__draft
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_pending_reapir_history_search_view
 msgid "New"
-msgstr ""
+msgstr "New"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
@@ -2301,6 +2324,8 @@ msgid ""
 "New\n"
 "                                Battery Size"
 msgstr ""
+"Nuevo\n"
+"                                Tamaño de batería"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
@@ -2308,12 +2333,14 @@ msgid ""
 "New\n"
 "                                Tire Size"
 msgstr ""
+"Nuevo\n"
+"                                Tamaño de neumático"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_battery_history__new_battery_issue_date
 #: model:ir.model.fields,field_description:fleet_operations.field_update_battery_info__new_battery_issue_date
 msgid "New Battery Issuance Date"
-msgstr ""
+msgstr "New Batería Issuance Fecha"
 
 #. module: fleet_operations
 #. odoo-python
@@ -2321,17 +2348,17 @@ msgstr ""
 msgid ""
 "New Battery Issuance Date Should Be Greater Than Previous Battery Issuance "
 "Date."
-msgstr ""
+msgstr "La nueva fecha de emisión de batería debe ser mayor que la fecha anterior de emisión de batería."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_update_battery_info__new_battery_sn
 msgid "New Battery S/N"
-msgstr ""
+msgstr "New Batería S/N"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_battery_history__new_battery_sn
 msgid "New Battery Serial"
-msgstr ""
+msgstr "New Batería Serial"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_battery_history__new_battery_size
@@ -2339,23 +2366,23 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_battery_info_form_view
 msgid "New Battery Size"
-msgstr ""
+msgstr "New Batería Size"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_color_history__current_color_id
 #: model:ir.model.fields,field_description:fleet_operations.field_update_color_info__current_color_id
 msgid "New Color"
-msgstr ""
+msgstr "New Color"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_workorder_parts_history_details__new_encode_qty
 msgid "New Encoded Qty"
-msgstr ""
+msgstr "New Encoded Qty"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "New Engine"
-msgstr ""
+msgstr "New Motor"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_engine_history__new_engine_no
@@ -2363,30 +2390,30 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_engine_info_form_view
 msgid "New Engine No"
-msgstr ""
+msgstr "New Motor No"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_tire_history__new_tire_issue_date
 #: model:ir.model.fields,field_description:fleet_operations.field_update_tire_info__new_tire_issue_date
 msgid "New Tire Issuance Date"
-msgstr ""
+msgstr "New Tire Issuance Fecha"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/wizard/update_history.py:0
 msgid ""
 "New Tire Issuance Date Should Be Greater Than Previous Tire Issuance Date."
-msgstr ""
+msgstr "La nueva fecha de emisión de neumático debe ser mayor que la fecha anterior de emisión de neumático."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_update_tire_info__new_tire_sn
 msgid "New Tire S/N"
-msgstr ""
+msgstr "New Tire S/N"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_tire_history__new_tire_sn
 msgid "New Tire Serial"
-msgstr ""
+msgstr "New Tire Serial"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_tire_history__new_tire_size
@@ -2394,7 +2421,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_tire_info_form_view
 msgid "New Tire Size"
-msgstr ""
+msgstr "New Tire Size"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_update_vin_info__new_vin_no
@@ -2402,12 +2429,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_vin_info_form_view
 msgid "New Vin No"
-msgstr ""
+msgstr "New Vin No"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "New color"
-msgstr ""
+msgstr "New color"
 
 #. module: fleet_operations
 #. odoo-python
@@ -2415,143 +2442,143 @@ msgstr ""
 msgid ""
 "New work order can only be generated either vehicle status is in Inspection "
 "or Released!"
-msgstr ""
+msgstr "Solo se puede generar una nueva orden de trabajo cuando el estado del vehículo está en Inspección o Liberado."
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_next_increment_number
 msgid "Next Increment Number"
-msgstr ""
+msgstr "Próximo Increment Número"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__increment_odometer
 msgid "Next Increment Odometer"
-msgstr ""
+msgstr "Próximo Increment Odómetro"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/wizard/pending_repair_confirm.py:0
 msgid ""
 "Next Increment Odometer is not set for %s please set it from configuration!"
-msgstr ""
+msgstr "El incremento de odómetro siguiente no está configurado para %s; configúrelo en configuración."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__next_service_odometer
 msgid "Next Odometer Value"
-msgstr ""
+msgstr "Próximo Odómetro Value"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__next_service_date
 msgid "Next Service"
-msgstr ""
+msgstr "Próximo Servicio"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__next_service_date
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Next Service Date"
-msgstr ""
+msgstr "Próximo Servicio Fecha"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/report/fleet_history.py:0
 msgid "Next Service Date Report"
-msgstr ""
+msgstr "Próximo Servicio Fecha Informe"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "Next Service Day"
-msgstr ""
+msgstr "Próximo Servicio Day"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.next_service_days_act
 #: model:ir.ui.menu,name:fleet_operations.next_service_days
 #: model_terms:ir.ui.view,arch_db:fleet_operations.next_service_days_form
 msgid "Next Service Days"
-msgstr ""
+msgstr "Próximo Servicio Days"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Next Service Due"
-msgstr ""
+msgstr "Próximo Servicio Vencimiento"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_advance_search__next_service_date
 msgid "Next Service From"
-msgstr ""
+msgstr "Próximo Servicio From"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__due_odometer
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Next Service Odometer"
-msgstr ""
+msgstr "Próximo Servicio Odómetro"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/report/fleet_history.py:0
 msgid "Next Service Odometer Repairs Report"
-msgstr ""
+msgstr "Próximo Servicio Odómetro Repairs Informe"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_advance_search__next_service_date_to
 msgid "Next Service To"
-msgstr ""
+msgstr "Próximo Servicio To"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_next_services_by_date_xls
 #: model:ir.model.fields.selection,name:fleet_operations.selection__print_fleet_history__sel_report__nex_ser_date
 msgid "Next Service by Date"
-msgstr ""
+msgstr "Próximo Servicio by Fecha"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_next_services_by_odometer_xls
 #: model:ir.model.fields.selection,name:fleet_operations.selection__print_fleet_history__sel_report__nex_ser_odometer
 msgid "Next Service by Odometer"
-msgstr ""
+msgstr "Próximo Servicio by Odómetro"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_next_service_days
 msgid "Next Service days"
-msgstr ""
+msgstr "Próximo Servicio days"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/wizard/pending_repair_confirm.py:0
 msgid ""
 "Next service days is not configured for %s please set it from configuration!"
-msgstr ""
+msgstr "Los días del próximo servicio no están configurados para %s; configúrelos en configuración."
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "No of Cylinders"
-msgstr ""
+msgstr "No of Cylinders"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "No of Doors"
-msgstr ""
+msgstr "No of Doors"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.repair_line_summary_qweb
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "No."
-msgstr ""
+msgstr "No."
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle__main_type__non-vehicle
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Non-Vehicle"
-msgstr ""
+msgstr "No vehicular"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Non-Write-Off"
-msgstr ""
+msgstr "Non-Baja total"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__note
@@ -2561,7 +2588,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_pending_reapir_history_form_view
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_pending_reapir_history_tree_view
 msgid "Note"
-msgstr ""
+msgstr "Note"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_battery_history__note
@@ -2582,28 +2609,28 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_tire_info_form_view
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_vin_info_form_view
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_writeoff_cancel_reason_wizard
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__odometer
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Odometer"
-msgstr ""
+msgstr "Odómetro"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__odometer_check
 msgid "Odometer Change"
-msgstr ""
+msgstr "Odómetro Cambio"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Odometer Details"
-msgstr ""
+msgstr "Odómetro Detalles"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.next_increment_number_tree_act
@@ -2611,13 +2638,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:fleet_operations.field_update_next_service_config__number
 #: model:ir.ui.menu,name:fleet_operations.odometer_increment_menu
 msgid "Odometer Increment"
-msgstr ""
+msgstr "Odómetro Increment"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__odometer_unit
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Odometer Unit"
-msgstr ""
+msgstr "Odómetro Unidad"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_odometer__value
@@ -2640,24 +2667,24 @@ msgstr "Medida del odómetro del vehículo al momento del registro"
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Oil"
-msgstr ""
+msgstr "Oil"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__oil_capacity
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Oil Capacity"
-msgstr ""
+msgstr "Oil Capacity"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__oil_name
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Oil Name"
-msgstr ""
+msgstr "Oil Nombre"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.continue_pending_repair_form_view
 msgid "Okay"
-msgstr ""
+msgstr "Okay"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
@@ -2665,6 +2692,8 @@ msgid ""
 "Old\n"
 "                                Battery Size"
 msgstr ""
+"Anterior\n"
+"                                Tamaño de batería"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
@@ -2672,43 +2701,45 @@ msgid ""
 "Old\n"
 "                                Tire Size"
 msgstr ""
+"Anterior\n"
+"                                Tamaño de neumático"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "Old Engine"
-msgstr ""
+msgstr "Old Motor"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__old_parts_incoming_ship_ids
 msgid "Old Returned"
-msgstr ""
+msgstr "Old Returned"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "Old Vehicle Color"
-msgstr ""
+msgstr "Old Vehículo Color"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle__state__contract
 msgid "On Contract"
-msgstr ""
+msgstr "On Contract"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle__state__rent
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "On Rent"
-msgstr ""
+msgstr "En arriendo"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle_log_services__state__confirm
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_work_order_search__state__confirm
 msgid "Open"
-msgstr ""
+msgstr "Open"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__date_open
 msgid "Open Date"
-msgstr ""
+msgstr "Open Fecha"
 
 #. module: fleet_operations
 #: model_terms:ir.actions.act_window,help:fleet_operations.fleet_vehicle_witten_off_act
@@ -2717,42 +2748,45 @@ msgid ""
 "            on your vehicle. Write off can be of many type: general accident\n"
 "            insurgent accident etc."
 msgstr ""
+"OpenERP helps you keeping track of all the write off done\n"
+"            on your vehículo. Write off puede be of many type: general accident\n"
+"            insurgent accident etc."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_stock_move__type
 msgid "Operation Type"
-msgstr ""
+msgstr "Operación Tipo"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Other Note"
-msgstr ""
+msgstr "Other Note"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Other Properties"
-msgstr ""
+msgstr "Other Properties"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__out_going_ids
 msgid "Out Going"
-msgstr ""
+msgstr "Out Going"
 
 #. module: fleet_operations
 #: model:color.color,name:fleet_operations.color_purple_11
 msgid "PURPLE"
-msgstr ""
+msgstr "PURPLE"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_task_line__product_id
 msgid "Part"
-msgstr ""
+msgstr "Part"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_trip_encoded_history__part_name
 #: model:ir.model.fields,field_description:fleet_operations.field_workorder_parts_history_details__name
 msgid "Part Name"
-msgstr ""
+msgstr "Part Nombre"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_trip_encoded_history__product_id
@@ -2760,98 +2794,98 @@ msgstr ""
 #: model:ir.model.fields,field_description:fleet_operations.field_workorder_parts_history_details__product_id
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Part No"
-msgstr ""
+msgstr "Part No"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__parts_ids
 msgid "Parts"
-msgstr ""
+msgstr "Repuestos"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Parts Used"
-msgstr ""
+msgstr "Repuestos Used"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__payment
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Payment"
-msgstr ""
+msgstr "Payment"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__pending_repair_type__state__in-complete
 msgid "Pending"
-msgstr ""
+msgstr "Pendiente"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_update_pending_repair_history__pending_reapir_history_ids
 msgid "Pending Applied History"
-msgstr ""
+msgstr "Pendiente Applied Historial"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_pending_repair_confirm
 msgid "Pending Repair Confirm"
-msgstr ""
+msgstr "Pendiente Reparación Confirmar"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_pending_repair_type
 msgid "Pending Repair Type"
-msgstr ""
+msgstr "Pendiente Reparación Tipo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__pending_repair_type_ids
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Pending Repair Types"
-msgstr ""
+msgstr "Pendiente Reparación Types"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_pending_applied_history
 msgid "Pending applied History"
-msgstr ""
+msgstr "Pendiente applied Historial"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "Please configure Driver from vehicle or in a service order!!"
-msgstr ""
+msgstr "Por favor configure Conductor from vehicle or in a service order!!"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/wizard/pending_repair_confirm.py:0
 msgid "Please set the current Odometer of vehicle in work order!"
-msgstr ""
+msgstr "Por favor set the current Odómetro of vehicle in work order!"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__policy_number
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Policy Number"
-msgstr ""
+msgstr "Policy Número"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Preventive Cause Notes"
-msgstr ""
+msgstr "Preventive Cause Notes"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Preventive Note.."
-msgstr ""
+msgstr "Preventive Note.."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_battery_history__previous_battery_issue_date
 #: model:ir.model.fields,field_description:fleet_operations.field_update_battery_info__previous_battery_issue_date
 msgid "Previous Battery Issuance Date"
-msgstr ""
+msgstr "Anterior Batería Issuance Fecha"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_update_battery_info__previous_battery_sn
 msgid "Previous Battery S/N"
-msgstr ""
+msgstr "Anterior Batería S/N"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_battery_history__previous_battery_sn
 msgid "Previous Battery Serial"
-msgstr ""
+msgstr "Anterior Batería Serial"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_battery_history__previous_battery_size
@@ -2859,43 +2893,43 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_battery_info_form_view
 msgid "Previous Battery Size"
-msgstr ""
+msgstr "Anterior Batería Size"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_color_history__previous_color_id
 #: model:ir.model.fields,field_description:fleet_operations.field_update_color_info__previous_color_id
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_color_info_form_view
 msgid "Previous Color"
-msgstr ""
+msgstr "Anterior Color"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_engine_history__previous_engine_no
 #: model:ir.model.fields,field_description:fleet_operations.field_update_engine_info__previous_engine_no
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Previous Engine No"
-msgstr ""
+msgstr "Anterior Motor No"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "Previous Repair Types"
-msgstr ""
+msgstr "Anterior Reparación Types"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_tire_history__previous_tire_issue_date
 #: model:ir.model.fields,field_description:fleet_operations.field_update_tire_info__previous_tire_issue_date
 msgid "Previous Tire Issuance Date"
-msgstr ""
+msgstr "Anterior Tire Issuance Fecha"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_update_tire_info__previous_tire_sn
 msgid "Previous Tire S/N"
-msgstr ""
+msgstr "Anterior Tire S/N"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_tire_history__previous_tire_sn
 msgid "Previous Tire Serial"
-msgstr ""
+msgstr "Anterior Tire Serial"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_tire_history__previous_tire_size
@@ -2903,7 +2937,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_tire_info_form_view
 msgid "Previous Tire Size"
-msgstr ""
+msgstr "Anterior Tire Size"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_update_vin_info__previous_vin_no
@@ -2911,7 +2945,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_vin_info_form_view
 msgid "Previous Vin No"
-msgstr ""
+msgstr "Anterior Vin No"
 
 #. module: fleet_operations
 #. odoo-python
@@ -2919,7 +2953,7 @@ msgstr ""
 msgid ""
 "Previous work order is not complete, complete that work order first than you"
 " can confirm this work order!"
-msgstr ""
+msgstr "La orden de trabajo anterior no está completa; complete primero esa orden para poder confirmar esta orden de trabajo."
 
 #. module: fleet_operations
 #. odoo-python
@@ -2927,7 +2961,7 @@ msgstr ""
 msgid ""
 "Previous work order is not complete,Please complete that work order first "
 "than you can create new work order!"
-msgstr ""
+msgstr "La orden de trabajo anterior no está completa; complétela primero para poder crear una nueva orden de trabajo."
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_print
@@ -2936,12 +2970,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_vehicle_change_history_wiz
 #: model_terms:ir.ui.view,arch_db:fleet_operations.wo_report_form_view
 msgid "Print"
-msgstr ""
+msgstr "Imprimir"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_print_fleet_history
 msgid "Print fleet History"
-msgstr ""
+msgstr "Imprimir fleet Historial"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_product_template
@@ -2957,7 +2991,7 @@ msgstr "Variantes de producto"
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_advance_search__vehicle_location_id
 msgid "Province"
-msgstr ""
+msgstr "Province"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__purchaser_id
@@ -2968,142 +3002,142 @@ msgstr "Conductor"
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Put an internal note..."
-msgstr ""
+msgstr "Put an internal noe..."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_workorder_parts_history_details__wo_encoded_qty
 msgid "Qty"
-msgstr ""
+msgstr "Qty"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_trip_encoded_history__available_qty
 #: model:ir.model.fields,field_description:fleet_operations.field_workorder_parts_history_details__new_encode_qty
 msgid "Qty for Encoding"
-msgstr ""
+msgstr "Qty for Encoding"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_task_line__qty_hand
 msgid "Qty on Hand"
-msgstr ""
+msgstr "Qty on Hand"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "Quantity Available must be greater than zero!"
-msgstr ""
+msgstr "Cantidad Disponible must be greater than zero!"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_task_line__qty_hand
 msgid "Quantity on Hand"
-msgstr ""
+msgstr "Cantidad on Hand"
 
 #. module: fleet_operations
 #: model:color.color,name:fleet_operations.color_red_1
 msgid "RED"
-msgstr ""
+msgstr "RED"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.repair_line_summary_qweb
 msgid "REPAIR TYPE"
-msgstr ""
+msgstr "REPAIR TYPE"
 
 #. module: fleet_operations
 #: model:damage.types,name:fleet_operations.damage_type_08
 msgid "RIGHT HAND FRONT"
-msgstr ""
+msgstr "RIGHT HAND FRONT"
 
 #. module: fleet_operations
 #: model:damage.types,name:fleet_operations.damage_type_10
 msgid "RIGHT HAND REAR"
-msgstr ""
+msgstr "RIGHT HAND REAR"
 
 #. module: fleet_operations
 #: model:damage.types,name:fleet_operations.damage_type_12
 msgid "RIGHT HAND REAR SUSPENSION"
-msgstr ""
+msgstr "RIGHT HAND REAR SUSPENSION"
 
 #. module: fleet_operations
 #: model:damage.types,name:fleet_operations.damage_type_09
 msgid "ROOF PANEL"
-msgstr ""
+msgstr "ROOF PANEL"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Re-Open"
-msgstr ""
+msgstr "Re-Open"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__reopen_service_count
 msgid "Re-Open Services"
-msgstr ""
+msgstr "Re-Open Services"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Re-Opened From"
-msgstr ""
+msgstr "Re-Opened From"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__rear_tire_pressure
 msgid "Rear Tire Pressure"
-msgstr ""
+msgstr "Rear Tire Pressure"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__rear_tire_size
 msgid "Rear Tire Size"
-msgstr ""
+msgstr "Rear Tire Size"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_writeoff_cancel_reason__reason
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_writeoff_cancel_reason_wizard
 msgid "Reason"
-msgstr ""
+msgstr "Motivo"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_writeoff_cancel_reason_wizard
 msgid "Reason To Cancel"
-msgstr ""
+msgstr "Motivo To Cancelar"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_stock_move__issued_received_by_id
 #: model:ir.model.fields,field_description:fleet_operations.field_stock_picking__received_by_id
 msgid "Received By"
-msgstr ""
+msgstr "Recibido By"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/report/parts_received.py:0
 msgid "Received Parts"
-msgstr ""
+msgstr "Recibido Repuestos"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_receved_parts_xls
 msgid "Received Parts Reports"
-msgstr ""
+msgstr "Recibido Repuestos Reports"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.action_print_recived_parts
 msgid "Received Parts xlsx"
-msgstr ""
+msgstr "Recibido Repuestos xlsx"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__reg_id
 msgid "Registered By"
-msgstr ""
+msgstr "Registered By"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Registered Date"
-msgstr ""
+msgstr "Registered Fecha"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Registration Date"
-msgstr ""
+msgstr "Matrícula Fecha"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_advance_search__acquisition_date
 msgid "Registration From"
-msgstr ""
+msgstr "Matrícula From"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__vehicle_location_id
@@ -3113,12 +3147,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Registration State"
-msgstr ""
+msgstr "Estado de matrícula"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_advance_search__acquisition_date_to
 msgid "Registration To"
-msgstr ""
+msgstr "Matrícula To"
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle__state__released
@@ -3126,28 +3160,28 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Released"
-msgstr ""
+msgstr "Released"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__released_date
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Released Date"
-msgstr ""
+msgstr "Released Fecha"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_advance_search__release_date_from
 msgid "Released From"
-msgstr ""
+msgstr "Released From"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_advance_search__release_date_to
 msgid "Released To"
-msgstr ""
+msgstr "Released To"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__reopen_return_incoming_ship_ids
 msgid "Reopen Returned"
-msgstr ""
+msgstr "Reabrir Returned"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.action_repair_line_summary
@@ -3156,17 +3190,17 @@ msgstr ""
 #: model:ir.ui.menu,name:fleet_operations.repair_line_summary_menu
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_repair_line_summary_wiz
 msgid "Repair Line Summary"
-msgstr ""
+msgstr "Resumen de líneas de reparación"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_repair_line_summary_qweb
 msgid "Repair Line Summary Report"
-msgstr ""
+msgstr "Resumen de líneas de reparación Informe"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__repair_line_ids
 msgid "Repair Lines"
-msgstr ""
+msgstr "Reparación Lines"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.fleet_repair_type_tree_act
@@ -3179,105 +3213,105 @@ msgstr ""
 #: model:ir.ui.menu,name:fleet_operations.fleet_repair_type_menu
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_repair_type_form_view
 msgid "Repair Type"
-msgstr ""
+msgstr "Reparación Tipo"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_service_types_form
 msgid "Repair Types"
-msgstr ""
+msgstr "Reparación Types"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "Repair type with this name already exists!"
-msgstr ""
+msgstr "Reparación type with this name already exists!"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Repairs"
-msgstr ""
+msgstr "Repairs"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Repairs Pending"
-msgstr ""
+msgstr "Repairs Pendiente"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "Repairs target completion date should be less than estimated date."
-msgstr ""
+msgstr "Repairs target completion date should be less than estimated date."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__report_date
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Report Date"
-msgstr ""
+msgstr "Informe Fecha"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.report_heading_act
 #: model:ir.model,name:fleet_operations.model_report_heading
 #: model_terms:ir.ui.view,arch_db:fleet_operations.report_heading_form
 msgid "Report Heading"
-msgstr ""
+msgstr "Informe Heading"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_vehicle_change_history__report_type
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_vehicle_change_history_wiz
 msgid "Report Type"
-msgstr ""
+msgstr "Informe Tipo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__return_inv_count
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Return Invoice"
-msgstr ""
+msgstr "Return Factura"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_report_heading__revision_no
 msgid "Rev. No."
-msgstr ""
+msgstr "Rev. No."
 
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type16
 msgid "Road Wheel and Tire"
-msgstr ""
+msgstr "Road Wheel and Tire"
 
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type17
 msgid "Routine Service and Inspection"
-msgstr ""
+msgstr "Routine Servicio and Inspection"
 
 #. module: fleet_operations
 #: model:color.color,name:fleet_operations.color_silver_4
 msgid "SILVER"
-msgstr ""
+msgstr "SILVER"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Sales & Purchases"
-msgstr ""
+msgstr "Sales & Purchases"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__salvage_value
 msgid "Salvage Value"
-msgstr ""
+msgstr "Salvage Value"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_work_order_advance_search_form_view
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_print_fleet_history__sel_report
 #: model:ir.model.fields,field_description:fleet_operations.field_work_order_reports__select_report
 msgid "Select Report"
-msgstr ""
+msgstr "Select Informe"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_vehicle_unique_sequence__sequence_id
 msgid "Sequence"
-msgstr ""
+msgstr "Sequence"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__source_service_id
@@ -3289,40 +3323,40 @@ msgstr "Servicio"
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Service Amount"
-msgstr ""
+msgstr "Servicio Monto"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.service_category_tree_act
 #: model:ir.model.fields,field_description:fleet_operations.field_service_category__name
 msgid "Service Category"
-msgstr ""
+msgstr "Servicio Categoría"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "Service Category with this name already exists!"
-msgstr ""
+msgstr "Servicio Categoría with this name already exists!"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Service Close Date"
-msgstr ""
+msgstr "Servicio Close Fecha"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Service Details"
-msgstr ""
+msgstr "Servicio Detalles"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__service_invoice_id
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Service Invoice"
-msgstr ""
+msgstr "Servicio Factura"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_stock_picking__service_id
 msgid "Service No."
-msgstr ""
+msgstr "Servicio No."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__work_order_ids
@@ -3330,100 +3364,100 @@ msgstr ""
 #: model:ir.model.fields,field_description:fleet_operations.field_trip_encoded_history_temp__work_order_id
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "Service Order"
-msgstr ""
+msgstr "Servicio Orden"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "Service Order Closed Date"
-msgstr ""
+msgstr "Servicio Orden Closed Fecha"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Service Order Details"
-msgstr ""
+msgstr "Servicio Orden Detalles"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "Service Order No"
-msgstr ""
+msgstr "Servicio Orden No"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Service Order#"
-msgstr ""
+msgstr "Servicio Orden#"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Service Priority"
-msgstr ""
+msgstr "Servicio Priority"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__service_ref_invoice_id
 msgid "Service Refund Invoice"
-msgstr ""
+msgstr "Servicio Refund Factura"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_service_repair_line
 msgid "Service Repair Line"
-msgstr ""
+msgstr "Servicio Reparación Línea"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Service Report On"
-msgstr ""
+msgstr "Servicio Informe On"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Service Start Date"
-msgstr ""
+msgstr "Servicio Start Fecha"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__task_ids
 msgid "Service Task"
-msgstr ""
+msgstr "Servicio Task"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Service Type"
-msgstr ""
+msgstr "Servicio Tipo"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "Service amount value must be positive!"
-msgstr ""
+msgstr "Servicio amount value must be positive!"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "Service type with this name already exists!"
-msgstr ""
+msgstr "Servicio type with this name already exists!"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_service_types_form
 msgid "Service types"
-msgstr ""
+msgstr "Servicio types"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.fleet_vehicle_log_services_form_action
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Services"
-msgstr ""
+msgstr "Services"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Services Details"
-msgstr ""
+msgstr "Services Detalles"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.fleet_vehicle_work_order
 msgid "Services Report"
-msgstr ""
+msgstr "Services Informe"
 
 #. module: fleet_operations
 #: model:ir.ui.menu,name:fleet_operations.fleet_work_order_report_menu
 msgid "Services Search"
-msgstr ""
+msgstr "Services Buscar"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_fleet_vehicle_log_services
@@ -3433,7 +3467,7 @@ msgstr "Servicios para los vehículos"
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Set to Draft"
-msgstr ""
+msgstr "Set to Borrador"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_report_heading__image_small
@@ -3442,24 +3476,24 @@ msgid ""
 "automatically resized as a 64x64px image,                                 "
 "with aspect ratio preserved. Use this field anywhere a small"
 "                                 image is required."
-msgstr ""
+msgstr "Small-sized image of the Informe.                                 It is automatically resized as a 64x64px image,                                 with aspect ratio preserved. Use this field anywhere a small                                 image is required."
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "Sold Date Should Be Greater Than Registration Date."
-msgstr ""
+msgstr "Sold Fecha Should Be Greater Than Matrícula Fecha."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__start_date_insurance
 msgid "Start Date"
-msgstr ""
+msgstr "Start Fecha"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__state
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "State"
-msgstr ""
+msgstr "Estado"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_advance_search__state
@@ -3476,12 +3510,12 @@ msgstr "Etapa"
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type18
 msgid "Steering System"
-msgstr ""
+msgstr "Steering System"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_stock_adjustment_xls
 msgid "Stock Adjustment Report"
-msgstr ""
+msgstr "Inventario Adjustment Informe"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_stock_move
@@ -3491,12 +3525,12 @@ msgstr "Moviemiento de stock"
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_stock_picking_xls_report
 msgid "Stock Picking XLSX reports"
-msgstr ""
+msgstr "Inventario Picking XLSX reports"
 
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type19
 msgid "Suspension System"
-msgstr ""
+msgstr "Suspension System"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_fleet_vehicle__fleet_id
@@ -3504,205 +3538,205 @@ msgstr ""
 #: model:ir.model.fields,help:fleet_operations.field_fleet_wittenoff__fleet_id
 #: model:ir.model.fields,help:fleet_operations.field_res_users__usersql_id
 msgid "Take this field for data migration"
-msgstr ""
+msgstr "Take this field for data migration"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_service_repair_line__target_date
 msgid "Target Completion"
-msgstr ""
+msgstr "Target Completion"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "Target Completion Date Should Be Greater Than Issue Date."
-msgstr ""
+msgstr "Target Completion Fecha Should Be Greater Than Incidencia Fecha."
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_task_line
 msgid "Task Line"
-msgstr ""
+msgstr "Task Línea"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__wo_tax_amount
 msgid "Tax"
-msgstr ""
+msgstr "Tax"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__maintenance_team_id
 msgid "Team"
-msgstr ""
+msgstr "Equipo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__team_id
 msgid "Teams"
-msgstr ""
+msgstr "Teams"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_update_engine_info__temp_bool
 msgid ""
 "Temp Bool for making                                     previous color "
 "readonly"
-msgstr ""
+msgstr "Temp Bool for making                                     previous color readonly"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_update_battery_info__temp_bool
 msgid ""
 "Temp Bool for making previous                                              "
 "Battery info readonly"
-msgstr ""
+msgstr "Temp Bool for making previous                                              Battery info readonly"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_update_vin_info__temp_bool
 msgid ""
 "Temp Bool for making previous                                 color readonly"
-msgstr ""
+msgstr "Temp Bool for making previous                                 color readonly"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_update_color_info__temp_bool
 msgid ""
 "Temp Bool for making previous                                color readonly"
-msgstr ""
+msgstr "Temp Bool for making previous                                color readonly"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_update_tire_info__temp_bool
 msgid "Temp Bool for making previous Tire info readonly"
-msgstr ""
+msgstr "Temp Bool for making previous Tire info readonly"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_workorder_parts_history_details__vehicle_make
 msgid "The Make of the Vehicle"
-msgstr ""
+msgstr "The Make of the Vehículo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_workorder_parts_history_details__name
 msgid "The Part Name"
-msgstr ""
+msgstr "The Part Nombre"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_trip_encoded_history__product_id
 #: model:ir.model.fields,help:fleet_operations.field_trip_encoded_history_temp__product_id
 #: model:ir.model.fields,help:fleet_operations.field_workorder_parts_history_details__product_id
 msgid "The Part Number"
-msgstr ""
+msgstr "The Part Número"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_trip_encoded_history__encoded_qty
 msgid ""
 "The Quantity that is used in                                         in "
 "Workorder"
-msgstr ""
+msgstr "La cantidad usada en la orden de trabajo."
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_trip_encoded_history__used_qty
 msgid ""
 "The Quantity that is used in in                                     Contact "
 "Team Trip"
-msgstr ""
+msgstr "La cantidad usada en Contact Team Trip."
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_workorder_parts_history_details__used_qty
 msgid "The Quantity that is used in in Work order"
-msgstr ""
+msgstr "The Cantidad that is used in in Trabajo order"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_trip_encoded_history_temp__used_qty
 msgid "The Quantity that is used in in Workorder"
-msgstr ""
+msgstr "The Cantidad that is used in in Workorder"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_workorder_parts_history_details__wo_encoded_qty
 msgid ""
 "The Quantity which is                                   available to use"
-msgstr ""
+msgstr "La cantidad disponible para usar."
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_trip_encoded_history__available_qty
 msgid "The Quantity which is available to use"
-msgstr ""
+msgstr "The Cantidad which is available to use"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_fleet_wittenoff__currency_id
 msgid "The optional other currency if it is a multi-currency entry."
-msgstr ""
+msgstr "The optional other currency if it is a multi-currency entry."
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_workorder_parts_history_details__issued_by
 msgid "The user who would issue the parts"
-msgstr ""
+msgstr "The user who would issue the repuestos"
 
 #. module: fleet_operations
 #: model:ir.model.constraint,message:fleet_operations.constraint_fleet_vehicle_fmp_unique
 msgid "The vehicle is already exist with this Vehicle ID!"
-msgstr ""
+msgstr "The vehicle is already exist with this Vehículo ID!"
 
 #. module: fleet_operations
 #: model:ir.model.constraint,message:fleet_operations.constraint_fleet_vehicle_vehilce_unique
 msgid "The vehicle is already exist with this vin no.!"
-msgstr ""
+msgstr "The vehículo is ya exist with this vin no.!"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_workorder_parts_history_details__wo_id
 msgid "The work order for which the part was used"
-msgstr ""
+msgstr "The work order for which the repuesto was utilizados"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "There is no data for repair type, add repair type from configuration!"
-msgstr ""
+msgstr "There is no data for repair type, add repair type from configuration!"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "This color already exist"
-msgstr ""
+msgstr "This color ya exist"
 
 #. module: fleet_operations
 #: model:ir.model.constraint,message:fleet_operations.constraint_vehicle_divison_vehicle.divison_uniq
 msgid "This divison is already exist!"
-msgstr ""
+msgstr "This divison is ya exist!"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_report_heading__image
 msgid ""
 "This field holds the image used as image                             for the"
 " Report , limited to 1024x1024px."
-msgstr ""
+msgstr "This field holds the image utilizados as image                             for the Informe , limited to 1024x1024px."
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "This vehicle is already in write-off state!"
-msgstr ""
+msgstr "This vehículo is ya in baja estado!"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/wizard/update_history.py:0
 msgid "Tire Change Date Should Be Greater Than New Tire Issuance Date."
-msgstr ""
+msgstr "Tire Cambio Fecha Should Be Greater Than New Tire Issuance Fecha."
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Tire Detail"
-msgstr ""
+msgstr "Tire Detail"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__tire_history_ids
 #: model:ir.model.fields.selection,name:fleet_operations.selection__vehicle_change_history__report_type__tire_history
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Tire History"
-msgstr ""
+msgstr "Historial de neumáticos"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_tire_history
 msgid "Tire History for Vehicle"
-msgstr ""
+msgstr "Historial de neumáticos for Vehículo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__tire_issuance_date
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Tire Issuance Date"
-msgstr ""
+msgstr "Tire Issuance Fecha"
 
 #. module: fleet_operations
 #. odoo-python
@@ -3710,54 +3744,54 @@ msgstr ""
 msgid ""
 "Tire Issuance Date And Battery Issuance Date Should Be Greater Than "
 "Registration Date."
-msgstr ""
+msgstr "La fecha de emisión de neumático y la fecha de emisión de batería deben ser mayores que la fecha de registro."
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "Tire Issuance Date Should Be Greater Than Registration Date."
-msgstr ""
+msgstr "Tire Issuance Fecha Should Be Greater Than Matrícula Fecha."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__tire_srno
 msgid "Tire S/N"
-msgstr ""
+msgstr "Tire S/N"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__tire_size
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Tire Size"
-msgstr ""
+msgstr "Tire Size"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_report_heading__name
 msgid "Title"
-msgstr ""
+msgstr "Title"
 
 #. module: fleet_operations
 #: model:mail.template,subject:fleet_operations.fleet_email_template
 msgid "Today your vehicle service"
-msgstr ""
+msgstr "Today your vehículo service"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_task_line__total
 msgid "Total Cost"
-msgstr ""
+msgstr "Total Costo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__total_parts_line
 msgid "Total Parts"
-msgstr ""
+msgstr "Total Repuestos"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__sub_total
 msgid "Total Parts Amount"
-msgstr ""
+msgstr "Total Repuestos Monto"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__service_amount
 msgid "Total Service Amount"
-msgstr ""
+msgstr "Total Servicio Monto"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_stock_picking
@@ -3768,54 +3802,54 @@ msgstr "Transferir "
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__transfer_date
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Transfer Date"
-msgstr ""
+msgstr "Transfer Fecha"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "Transfer Date Should Be Greater Than Sold Date."
-msgstr ""
+msgstr "Transfer Fecha Should Be Greater Than Sold Fecha."
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_trip_encoded_history
 msgid "Trip History"
-msgstr ""
+msgstr "Trip Historial"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_trip_encoded_history_temp
 msgid "Trip History Temparery"
-msgstr ""
+msgstr "Trip Historial Temparery"
 
 #. module: fleet_operations
 #: model:vehicle.type,name:fleet_operations.vehicle_type_truck_4
 msgid "Truck"
-msgstr ""
+msgstr "Truck"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_service_task__type
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_maintain_task_tree
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "Type of Vehicle"
-msgstr ""
+msgstr "Tipo of Vehículo"
 
 #. module: fleet_operations
 #: model:damage.types,name:fleet_operations.damage_type_13
 msgid "UNDER BONNET"
-msgstr ""
+msgstr "UNDER BONNET"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_task_line__product_uom
 msgid "UOM"
-msgstr ""
+msgstr "UOM"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_unique_vehicle_sequence_form_view
 msgid "Unique Vehicle Sequence"
-msgstr ""
+msgstr "Unique Vehículo Sequence"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_odometer__unit
@@ -3825,14 +3859,14 @@ msgstr "Unidad"
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_task_line__price_unit
 msgid "Unit Cost"
-msgstr ""
+msgstr "Unidad Costo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_fleet_vehicle__due_odometer_unit
 #: model:ir.model.fields,help:fleet_operations.field_fleet_vehicle__last_odometer_unit
 #: model:ir.model.fields,help:fleet_operations.field_fleet_wittenoff__odometer_unit
 msgid "Unit of the odometer "
-msgstr ""
+msgstr "Unidad of the odometer "
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_battery_info_form_view
@@ -3841,106 +3875,106 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_tire_info_form_view
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_vin_info_form_view
 msgid "Update"
-msgstr ""
+msgstr "Actualizar"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Update Battery"
-msgstr ""
+msgstr "Actualizar Batería"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_update_battery_info
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_battery_info_form_view
 msgid "Update Battery Info"
-msgstr ""
+msgstr "Actualizar Batería Info"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Update Color"
-msgstr ""
+msgstr "Actualizar Color"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_update_color_info
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_color_info_form_view
 msgid "Update Color Info"
-msgstr ""
+msgstr "Actualizar Color Info"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Update Engine"
-msgstr ""
+msgstr "Actualizar Motor"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_update_engine_info
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_engine_info_form_view
 msgid "Update Engine Info"
-msgstr ""
+msgstr "Actualizar Motor Info"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.action_update_next_service_day
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_update_next_service_view
 msgid "Update Next Service Day"
-msgstr ""
+msgstr "Actualizar Próximo Servicio Day"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_update_next_service_config
 msgid "Update Next Service configuration"
-msgstr ""
+msgstr "Actualizar Próximo Servicio configuration"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_pending_applied_history__updated_pending_id
 msgid "Update Pending"
-msgstr ""
+msgstr "Actualizar Pendiente"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_pending_reapir_history_form_view
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_pending_reapir_history_search_view
 msgid "Update Pending History"
-msgstr ""
+msgstr "Actualizar Pendiente Historial"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_update_pending_repair_history
 msgid "Update Pending Repair History"
-msgstr ""
+msgstr "Actualizar Pendiente Reparación Historial"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Update Tire"
-msgstr ""
+msgstr "Actualizar Tire"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_update_tire_info
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_tire_info_form_view
 msgid "Update Tire Info"
-msgstr ""
+msgstr "Actualizar Tire Info"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_update_vin_info
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_vin_info_form_view
 msgid "Update Vin Info"
-msgstr ""
+msgstr "Actualizar Vin Info"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__updated_by
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Updated By"
-msgstr ""
+msgstr "Updated By"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__updated_date
 msgid "Updated date"
-msgstr ""
+msgstr "Updated date"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_task_line__qty
 msgid "Used"
-msgstr ""
+msgstr "Used"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_trip_encoded_history__used_qty
 #: model:ir.model.fields,field_description:fleet_operations.field_trip_encoded_history_temp__used_qty
 msgid "Used Qty"
-msgstr ""
+msgstr "Used Qty"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_res_users
@@ -3954,6 +3988,8 @@ msgid ""
 "User Error!\n"
 " 'Please select criteria to create Vehicle Change History Report!"
 msgstr ""
+"Error de usuario\n"
+"Seleccione criterios para crear el informe de historial de cambios del vehículo."
 
 #. module: fleet_operations
 #. odoo-python
@@ -3962,6 +3998,8 @@ msgid ""
 "User Error!\n"
 " Date To' must be greater than 'Date From'!"
 msgstr ""
+"Error de usuario\n"
+"'Fecha hasta' debe ser mayor que 'Fecha desde'."
 
 #. module: fleet_operations
 #. odoo-python
@@ -3970,21 +4008,23 @@ msgid ""
 "User Error!\n"
 "'Date To' must be greater than 'Date From' !"
 msgstr ""
+"Error de usuario\n"
+"'Fecha hasta' debe ser mayor que 'Fecha desde'."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_res_users__usersql_id
 msgid "User ID"
-msgstr ""
+msgstr "Usuario ID"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.repair_line_summary_qweb
 msgid "VEHICLE NAME"
-msgstr ""
+msgstr "VEHICLE NAME"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.repair_line_summary_qweb
 msgid "VEHICLE REPAIR HISTORY"
-msgstr ""
+msgstr "VEHICLE REPAIR HISTORY"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__vechical_type_id
@@ -3992,12 +4032,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__vechical_type_id
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Vechical Type"
-msgstr ""
+msgstr "Vechical Tipo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__vehicle_plate
 msgid "Vechicle Plate No."
-msgstr ""
+msgstr "Vechicle Plate No."
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_fleet_vehicle
@@ -4033,7 +4073,7 @@ msgstr "Vehículo"
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_fleet_vehicle_advance_search
 msgid "Vehicle Advance Search"
-msgstr ""
+msgstr "Vehículo Advance Buscar"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.action_vehicle_change_history
@@ -4042,38 +4082,38 @@ msgstr ""
 #: model:ir.ui.menu,name:fleet_operations.vehicle_change_history_menu
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_vehicle_change_history_wiz
 msgid "Vehicle Change History"
-msgstr ""
+msgstr "Historial de cambios del vehículo"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_vehicle_change_history_qweb
 msgid "Vehicle Change History Report"
-msgstr ""
+msgstr "Historial de cambios del vehículo Informe"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__vehical_color_id
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Vehicle Color"
-msgstr ""
+msgstr "Vehículo Color"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_continue_pending_repair
 msgid "Vehicle Continue Pending Repair"
-msgstr ""
+msgstr "Vehículo Continue Pendiente Reparación"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_vehicle_department
 msgid "Vehicle Department"
-msgstr ""
+msgstr "Vehículo Department"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_vehicle_divison
 msgid "Vehicle Division"
-msgstr ""
+msgstr "Vehículo Division"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Vehicle Driver"
-msgstr ""
+msgstr "Vehículo Conductor"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_advance_search__fmp_id
@@ -4084,12 +4124,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_wittenoff_search
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_pending_reapir_history_search_view
 msgid "Vehicle ID"
-msgstr ""
+msgstr "Vehículo ID"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__fmp_id_editable
 msgid "Vehicle ID Editable?"
-msgstr ""
+msgstr "Vehículo ID Editable?"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
@@ -4103,75 +4143,75 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_fleet_odometer_tree
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_update_next_service_view
 msgid "Vehicle Id"
-msgstr ""
+msgstr "Vehículo Id"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Vehicle Images"
-msgstr ""
+msgstr "Vehículo Images"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Vehicle Information"
-msgstr ""
+msgstr "Información del vehículo"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_insurance_type
 msgid "Vehicle Insurance Type"
-msgstr ""
+msgstr "Vehículo Seguro Tipo"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_vehicle_location
 msgid "Vehicle Location"
-msgstr ""
+msgstr "Vehículo Ubicación"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_product_product__vehicle_make_id
 #: model:ir.model.fields,field_description:fleet_operations.field_workorder_parts_history_details__vehicle_make
 msgid "Vehicle Make"
-msgstr ""
+msgstr "Vehículo Make"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Vehicle Odometer"
-msgstr ""
+msgstr "Vehículo Odómetro"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__vehicle_owner
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Vehicle Owner"
-msgstr ""
+msgstr "Vehículo Owner"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_update_pending_repair_history__pending_reapir_ids
 msgid "Vehicle Pending History"
-msgstr ""
+msgstr "Vehículo Pendiente Historial"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_pending_reapir_history_form_view
 msgid "Vehicle Pending Repairs"
-msgstr ""
+msgstr "Vehículo Pendiente Repairs"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_repair_type
 msgid "Vehicle Repair Type"
-msgstr ""
+msgstr "Vehículo Reparación Tipo"
 
 #. module: fleet_operations
 #: model:repair.type,name:fleet_operations.nds_repair_type20
 msgid "Vehicle Roll Over"
-msgstr ""
+msgstr "Vehículo Roll Over"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_account_bank_statement_line__vehicle_service_id
 #: model:ir.model.fields,field_description:fleet_operations.field_account_move__vehicle_service_id
 msgid "Vehicle Service"
-msgstr ""
+msgstr "Vehículo Servicio"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_service_category
 msgid "Vehicle Service Category"
-msgstr ""
+msgstr "Vehículo Servicio Categoría"
 
 #. module: fleet_operations
 #. odoo-python
@@ -4179,17 +4219,17 @@ msgstr ""
 msgid ""
 "Vehicle Service amount is greater than Zero. Please Generate Service Invoice"
 " first!"
-msgstr ""
+msgstr "El monto del servicio del vehículo es mayor que cero. Genere primero la factura de servicio."
 
 #. module: fleet_operations
 #: model:ir.model.fields.selection,name:fleet_operations.selection__work_order_reports__select_report__wo_month_sum_rep
 msgid "Vehicle Services Monthly Summary Report"
-msgstr ""
+msgstr "Vehículo Services Monthly Resumen Informe"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__state
 msgid "Vehicle State"
-msgstr ""
+msgstr "Vehículo Estado"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.vehicle_type_act
@@ -4197,40 +4237,40 @@ msgstr ""
 #: model:ir.ui.menu,name:fleet_operations.vehicle_type
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_type_form
 msgid "Vehicle Type"
-msgstr ""
+msgstr "Vehículo Tipo"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.fleet_unique_vehicle_sequence_tree_act
 #: model:ir.model,name:fleet_operations.model_vehicle_unique_sequence
 msgid "Vehicle Unique Sequence"
-msgstr ""
+msgstr "Vehículo Unique Sequence"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Vehicle Witten-off"
-msgstr ""
+msgstr "Vehículo Witten-off"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_task_line__fleet_service_id
 msgid "Vehicle Work Order"
-msgstr ""
+msgstr "Vehículo Orden de trabajo"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_writeoff_cancel_reason
 msgid "Vehicle Write-off Cancel Reason"
-msgstr ""
+msgstr "Vehículo Escribir-off Cancelar Motivo"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "Vehicle status will only set to released if it is in completed state."
-msgstr ""
+msgstr "Vehículo status will only set to released if it is in completed state."
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "Vehicle type with this name already exists!"
-msgstr ""
+msgstr "Vehículo type with this name already exists!"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_print
@@ -4238,54 +4278,56 @@ msgid ""
 "Vehicle xlsx Report.<br/>\n"
 "                    Select Option and print xlsx report for that"
 msgstr ""
+"Informe XLSX de vehículos.<br/>\n"
+"                    Seleccione una opción e imprima el informe XLSX correspondiente."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_vehicle_change_history__fleet_id
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Vehicle-ID"
-msgstr ""
+msgstr "Vehículo-ID"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.fleet_vehicle_witten_off_act
 #: model:ir.ui.menu,name:fleet_operations.vehicle_written_off_menu_id
 msgid "Vehicles Write-off"
-msgstr ""
+msgstr "Vehicles Escribir-off"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_vin_history
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__vin_history_ids
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Vin History"
-msgstr ""
+msgstr "Vin Historial"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_advance_search__vin_no
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__vin_no
 msgid "Vin No"
-msgstr ""
+msgstr "Vin No"
 
 #. module: fleet_operations
 #: model:color.color,name:fleet_operations.color_white_6
 msgid "WHITE"
-msgstr ""
+msgstr "WHITE"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "WO Close Forcefully"
-msgstr ""
+msgstr "WO Close Forcefully"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__wono_id
 msgid "WONo"
-msgstr ""
+msgstr "WONo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__warehouse_id
 #: model:ir.model.fields,field_description:fleet_operations.field_stock_picking__stock_warehouse_id
 #: model:ir.model.fields,field_description:fleet_operations.field_task_line__warehouse_id
 msgid "Warehouse"
-msgstr ""
+msgstr "Warehouse"
 
 #. module: fleet_operations
 #. odoo-python
@@ -4294,6 +4336,8 @@ msgid ""
 "Warning! \n"
 "                    No parts were used in selected date."
 msgstr ""
+"¡Advertencia!\n"
+"                    No se usaron repuestos en la fecha seleccionada."
 
 #. module: fleet_operations
 #. odoo-python
@@ -4302,69 +4346,71 @@ msgid ""
 "Warning! \n"
 "                No data Available for selected work order."
 msgstr ""
+"¡Advertencia!\n"
+"                No hay datos disponibles para la orden de trabajo seleccionada."
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/report/repair_line_summary.py:0
 msgid "Warning! No Work order found between the selected date !!"
-msgstr ""
+msgstr "Advertencia! No Trabajo order found between the selected date !!"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.continue_pending_repair_form_view
 msgid ""
 "Warning!! There is some previous repairs are remains to be repair for this "
 "vehicle"
-msgstr ""
+msgstr "¡Advertencia! Aún quedan reparaciones anteriores por realizar en este vehículo."
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "Warranty Period Should Be Greater Than Registration Date."
-msgstr ""
+msgstr "Warranty Period Should Be Greater Than Matrícula Fecha."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__warranty_period
 msgid "Warranty Upto"
-msgstr ""
+msgstr "Warranty Upto"
 
 #. module: fleet_operations
 #: model:ir.model.fields,help:fleet_operations.field_fleet_vehicle_log_services__date_open
 msgid ""
 "When Work Order                                         will confirm this "
 "date will be set."
-msgstr ""
+msgstr "Cuando se confirme la orden de trabajo, se establecerá esta fecha."
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__vehicle_width
 msgid "Width(mm)"
-msgstr ""
+msgstr "Width(mm)"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__left_wiper_blade
 msgid "Wiper Blade(L)"
-msgstr ""
+msgstr "Wiper Blade(L)"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__right_wiper_blade
 msgid "Wiper Blade(R)"
-msgstr ""
+msgstr "Wiper Blade(R)"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__rr_wiper_blade
 msgid "Wiper Blade(RR)"
-msgstr ""
+msgstr "Wiper Blade(RR)"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_fleet_wittenoff
 msgid "Wittenoff Vehicles"
-msgstr ""
+msgstr "Wittenoff Vehicles"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_ir_attachment__wo_attachment_id
 #: model:ir.model.fields,field_description:fleet_operations.field_product_document__wo_attachment_id
 #: model:ir.model.fields,field_description:fleet_operations.field_quotation_document__wo_attachment_id
 msgid "Wo Attachment"
-msgstr ""
+msgstr "Wo Attachment"
 
 #. module: fleet_operations
 #. odoo-python
@@ -4382,88 +4428,88 @@ msgstr ""
 #: model:ir.model.fields,field_description:fleet_operations.field_vin_history__workorder_id
 #: model_terms:ir.ui.view,arch_db:fleet_operations.update_vin_info_form_view
 msgid "Work Order"
-msgstr ""
+msgstr "Orden de trabajo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_stock_picking__work_order_out_id
 msgid "Work Order "
-msgstr ""
+msgstr "Orden de trabajo "
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_pending_applied_history__name
 #: model:ir.model.fields,field_description:fleet_operations.field_pending_repair_type__name
 msgid "Work Order #"
-msgstr ""
+msgstr "Orden de trabajo #"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_work_order_advance_search_form_view
 msgid "Work Order Advance Search"
-msgstr ""
+msgstr "Orden de trabajo Advance Buscar"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle__work_order_close
 msgid "Work Order Close"
-msgstr ""
+msgstr "Orden de trabajo Close"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.vehicle_change_history_qweb
 msgid "Work Order Closed Date"
-msgstr ""
+msgstr "Orden de trabajo Closed Fecha"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_workorder_monthly_summary_xls
 msgid "Work Order Monthly Summary Report"
-msgstr ""
+msgstr "Orden de trabajo Monthly Resumen Informe"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_wo_over_daysxls
 msgid "Work Order Over 10 Days Report"
-msgstr ""
+msgstr "Orden de trabajo Over 10 Days Informe"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_workorder_parts_history_details
 msgid "Work Order Parts History"
-msgstr ""
+msgstr "Orden de trabajo Repuestos Historial"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_work_order_reports
 msgid "Work Order Reports"
-msgstr ""
+msgstr "Orden de trabajo Reports"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Work Orders"
-msgstr ""
+msgstr "Orden de trabajos"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_vehicle_log_services__priority
 msgid "Work Priority"
-msgstr ""
+msgstr "Trabajo Priority"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_log_services_view_inherit
 msgid "Work Shop"
-msgstr ""
+msgstr "Trabajo Shop"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_workorder_parts_history_details__wo_id
 msgid "Work order"
-msgstr ""
+msgstr "Trabajo order"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_update_vin_info__workorder_id
 msgid "Workorder"
-msgstr ""
+msgstr "Workorder"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.action_writeoff_cancel_reason_wizard
 msgid "Write Off Cancel Reason Wizard"
-msgstr ""
+msgstr "Escribir Off Cancelar Motivo Wizard"
 
 #. module: fleet_operations
 #: model:ir.model,name:fleet_operations.model_report_fleet_operations_write_off_qweb
 msgid "Write Off Vehicle Report"
-msgstr ""
+msgstr "Informe de vehículo dado de baja"
 
 #. module: fleet_operations
 #: model:ir.actions.report,name:fleet_operations.write_off_report_qweb
@@ -4471,28 +4517,28 @@ msgstr ""
 #: model:ir.model.fields.selection,name:fleet_operations.selection__fleet_vehicle_advance_search__state__write-off
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_search_view_inherit_operations
 msgid "Write-Off"
-msgstr ""
+msgstr "Baja total"
 
 #. module: fleet_operations
 #: model:ir.actions.act_window,name:fleet_operations.fleet_vehicle_write_off_form_action
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "Write-off"
-msgstr ""
+msgstr "Baja"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_wittenoff_form_view
 msgid "Write-off Pictures"
-msgstr ""
+msgstr "Imágenes de baja"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_fleet_wittenoff__write_off_type
 msgid "Write-off Type"
-msgstr ""
+msgstr "Tipo de baja"
 
 #. module: fleet_operations
 #: model:color.color,name:fleet_operations.color_yellow_5
 msgid "YELLOW"
-msgstr ""
+msgstr "YELLOW"
 
 #. module: fleet_operations
 #. odoo-python
@@ -4500,7 +4546,7 @@ msgstr ""
 msgid ""
 "You can\t enter parts issue either open work order date or in between open "
 "work order date and current date!"
-msgstr ""
+msgstr "Puede registrar salida de repuestos en la fecha de apertura de la orden de trabajo o entre la fecha de apertura y la fecha actual."
 
 #. module: fleet_operations
 #. odoo-python
@@ -4508,7 +4554,7 @@ msgstr ""
 msgid ""
 "You can not add more than one next service days configuration for same "
 "vehicle.!!!"
-msgstr ""
+msgstr "No puede agregar más de una configuración de próximos días de servicio para el mismo vehículo."
 
 #. module: fleet_operations
 #. odoo-python
@@ -4516,19 +4562,19 @@ msgstr ""
 msgid ""
 "You can not add more than one odometer increment configuration for same "
 "vehicle.!!!"
-msgstr ""
+msgstr "No puede agregar más de una configuración de incremento de odómetro para el mismo vehículo."
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "You can not add negative value for odometer number of vehicle!"
-msgstr ""
+msgstr "¡No puede agregar un valor negativo al odómetro del vehículo!"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "You can not add negative value next service days!"
-msgstr ""
+msgstr "¡No puede agregar un valor negativo en días del próximo servicio!"
 
 #. module: fleet_operations
 #. odoo-python
@@ -4536,87 +4582,87 @@ msgstr ""
 msgid ""
 "You can not create service invoice without amount!!Please add Service amount"
 " first !!"
-msgstr ""
+msgstr "No puede crear una factura de servicio sin monto. Agregue primero el monto del servicio."
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "You can not have duplicate parts assigned !!!"
-msgstr ""
+msgstr "¡No puede tener repuestos duplicados asignados!"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "You can't add duplicate damage types !"
-msgstr ""
+msgstr "¡No puede agregar tipos de daño duplicados!"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "You can't confirm this work order as vehicle is in write-off state!"
-msgstr ""
+msgstr "¡No puede confirmar esta orden de trabajo porque el vehículo está en estado de baja!"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "You can't create work order for vehicle which is already On Rent!"
-msgstr ""
+msgstr "¡No puede crear una orden de trabajo para un vehículo que ya está en arriendo!"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "You can't create work order for vehicle which is already write-off!"
-msgstr ""
+msgstr "¡No puede crear una orden de trabajo para un vehículo que ya está dado de baja!"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "You can't delete Work Order which in Confirmed or Done state!"
-msgstr ""
+msgstr "¡No puede eliminar una orden de trabajo que está en estado Confirmado o Hecho!"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "You can't delete part those already used."
-msgstr ""
+msgstr "No puede eliminar repuestos que ya fueron utilizados."
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "You can't duplicate this record because it is already write-off"
-msgstr ""
+msgstr "Usted puede't duplicate this record because it is ya baja"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "You can't enter odometer less than previous odometer %s !"
-msgstr ""
+msgstr "Usted puede't enter odometer less than previous odometer %s !"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "You can't enter used quantity as Zero!"
-msgstr ""
+msgstr "Usted puede't enter utilizados quantity as Zero!"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_service.py:0
 msgid "You can't select part which is In-Active!"
-msgstr ""
+msgstr "Usted puede't select repuesto which is In-Active!"
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid "You can't write-off this vehicle which is On Rent."
-msgstr ""
+msgstr "Usted puede't baja this vehículo which is En arriendo."
 
 #. module: fleet_operations
 #. odoo-python
 #: code:addons/fleet_operations/models/fleet_extended.py:0
 msgid ""
 "You can't write-off this vehicle which is in Progress or Complete state!"
-msgstr ""
+msgstr "No puede dar de baja este vehículo porque está en estado En progreso o Completado."
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.pending_repair_confirm_form_view
@@ -4628,39 +4674,39 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_repair_line_summary_wiz
 #: model_terms:ir.ui.view,arch_db:fleet_operations.view_vehicle_change_history_wiz
 msgid "or"
-msgstr ""
+msgstr "or"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "set the vehicle status to released if the status is compelte."
-msgstr ""
+msgstr "set the vehículo status to released if the status is compelte."
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "show all the driver history"
-msgstr ""
+msgstr "show all the driver history"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "show the odometer logs for this vehicle"
-msgstr ""
+msgstr "show the odometer logs for this vehículo"
 
 #. module: fleet_operations
 #: model_terms:ir.ui.view,arch_db:fleet_operations.fleet_vehicle_model_form_extended
 msgid "show the services logs for this vehicle"
-msgstr ""
+msgstr "show the services logs for this vehículo"
 
 #. module: fleet_operations
 #: model:ir.model.fields,field_description:fleet_operations.field_task_line__task_id
 msgid "task reference"
-msgstr ""
+msgstr "task reference"
 
 #. module: fleet_operations
 #: model:damage.types,name:fleet_operations.damage_type_11
 msgid "​RIGHT HAND FRONT SUSPENSION"
-msgstr ""
+msgstr "âRIGHT HAND FRONT SUSPENSION"
 
 #. module: fleet_operations
 #: model:damage.types,name:fleet_operations.damage_type_14
 msgid "​TRANSMISSION"
-msgstr ""
+msgstr "âTRANSMISSION"
